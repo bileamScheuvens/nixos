@@ -17,6 +17,7 @@
         ./boot.nix
         ./packages.nix
         ./vim.nix
+        ./bash.nix
         ./vpn.nix
         ./battery.nix
       ];

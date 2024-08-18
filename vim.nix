@@ -5,18 +5,19 @@
     (pkgs.vim_configurable.customize {
       name = "vim";
       vimrcConfig.customRC = ''
+        set nocompatible
         syntax enable
         set relativenumber number
-        set nocompatible
-        set tabstop=4
-        set shiftwidth=4
-        set expandtab
+
+        set tabstop=4 shiftwidth=4 expandtab
 
         set hlsearch
         nnoremap <esc><esc> :noh<return><esc>
+
+        set clipboard=unnamed
       '';
       vimrcConfig.packages.myplugins = with pkgs.vimPlugins; {
-        start = [ vim-addon-nix ];
+        start = [ vim-addon-nix vim-peekaboo ];
         opt = [];
       };
     })

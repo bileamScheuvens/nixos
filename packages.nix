@@ -16,6 +16,12 @@
   unzip
   powertop
   busybox
+  fzf
+  tldr
+  bat
+  eza
+  zoxide
+  
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -51,6 +57,7 @@
   pam_u2f
   libu2f-host
   libu2f-server
+
   ];
 
   programs.steam.enable = true;

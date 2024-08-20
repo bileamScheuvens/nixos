@@ -52,6 +52,7 @@
 
   # media
   v4l-utils
+  mpv
 
   # 2fa
   pam_u2f

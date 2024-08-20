@@ -24,4 +24,11 @@
      STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
     };
   };
+  security.polkit.extraConfig = ''
+    polkit.addRule(function(action, subject) {
+      if (action.id == "org.freedesktop.login1.suspend") {
+        return polkit.Result.YES;
+      }
+    });
+  '';
 }

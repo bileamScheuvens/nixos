@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -38,6 +38,8 @@
   gnumake
   cmake
   extra-cmake-modules
+  universal-ctags
+  inputs.nixvim.packages."${system}".default
   
   # games
   crawl

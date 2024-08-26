@@ -5,7 +5,7 @@
 
   # 2fa
   security.pam = {
-    u2f = {
+    u2f.settings = {
       enable = true;
       control = "sufficient";
       cue = true;

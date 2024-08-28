@@ -3,5 +3,6 @@
   imports = [ 
   	./bufferline.nix 
 	./ui_plugins.nix
+	./options.nix
 	];
 }

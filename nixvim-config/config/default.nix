@@ -1,8 +1,10 @@
 {
   # Import all your configuration modules here
   imports = [ 
-  	./bufferline.nix 
+    ./keymap.nix
+    ./cmp.nix
     ./ui_plugins.nix
     ./options.nix
+    ./nav_plugins.nix
 	];
 }

@@ -7,7 +7,7 @@
 
   # social
   discord
-  teams-for-linux
+  # teams-for-linux
   
   # utilities
   htop
@@ -21,6 +21,7 @@
   bat
   eza
   zoxide
+  ripgrep
   
 
   # framework specific

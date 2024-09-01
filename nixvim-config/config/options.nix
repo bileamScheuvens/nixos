@@ -25,10 +25,11 @@
     inccommand = "split";
 
     # external footprint
-    clipboard.providers.xsel.enable = true;
     clipboard.register = "unnamedplus";
+    clipboard.providers.wl-copy.enable = true;
     swapfile = false;
     undofile = true;
+    undodir = ".vim/undodir";
 
     # misc
     timeoutlen = 200;

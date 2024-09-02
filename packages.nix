@@ -22,6 +22,7 @@
   eza
   zoxide
   ripgrep
+  wl-clipboard
   
 
   # framework specific

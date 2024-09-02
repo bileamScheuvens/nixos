@@ -1,7 +1,7 @@
 {
   plugins = {
     nix.enable = true;
-    figdet.enable = true;
+    fidget.enable = true;
     lsp = {
       enable = true;
 
@@ -28,7 +28,6 @@
         pyright.enable = true;
         julials.enable = true;
         texlab.enable = true;
-      };
       };
     };
   };

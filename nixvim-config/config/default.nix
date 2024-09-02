@@ -3,6 +3,7 @@
   imports = [ 
     ./keymap.nix
     ./cmp.nix
+    ./lsp.nix
     ./ui_plugins.nix
     ./options.nix
     ./nav_plugins.nix

@@ -32,6 +32,6 @@
     undodir = ".vim/undodir";
 
     # misc
-    timeoutlen = 200;
+    timeoutlen = 250;
   };
 }

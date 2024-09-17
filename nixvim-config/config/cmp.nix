@@ -30,6 +30,7 @@
 
       settings = {
         snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
+        completion.keyword_length = 2;
 
         mapping = {
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";

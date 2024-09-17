@@ -29,9 +29,11 @@
     clipboard.providers.wl-copy.enable = true;
     swapfile = false;
     undofile = true;
-    undodir = ".vim/undodir";
+    # still doesnt seem to work
+    # undodir = builtins.getEnv "HOME" + ".vim/undodir";
 
     # misc
     timeoutlen = 250;
+    termguicolors = true;
   };
 }

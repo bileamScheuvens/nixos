@@ -4,10 +4,12 @@
   environment.systemPackages = with pkgs; [
   # version control
   git
+  git-lfs
 
   # social
   discord
-  # teams-for-linux
+  teams-for-linux
+  signal-desktop
   
   # utilities
   htop
@@ -23,7 +25,6 @@
   zoxide
   ripgrep
   wl-clipboard
-  
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -66,4 +67,10 @@
   ];
 
   programs.steam.enable = true;
+  programs.tmux = {
+    enable = true;
+    extraConfig = "
+set -ga terminal-overrides \",xterm-256color:Tc\"
+    ";
+  };
 }

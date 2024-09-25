@@ -69,7 +69,9 @@
   programs.steam.enable = true;
   programs.tmux = {
     enable = true;
+    escapeTime = 0;
     extraConfig = "
+set-option -g mouse on
 set -ga terminal-overrides \",xterm-256color:Tc\"
     ";
   };

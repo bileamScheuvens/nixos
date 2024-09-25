@@ -17,6 +17,9 @@
     mode = "t";
     key = "<Esc><Esc>";
     action = "<C-\\><C-n>";
+    options = {
+      nowait = true;
+    };
   }
   ];
 }

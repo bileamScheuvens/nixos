@@ -7,5 +7,6 @@
     ./ui_plugins.nix
     ./options.nix
     ./nav_plugins.nix
+    ./misc_plugins.nix
 	];
 }

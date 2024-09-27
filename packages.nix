@@ -10,6 +10,9 @@
   discord
   teams-for-linux
   signal-desktop
+
+  # productivity
+  obsidian
   
   # utilities
   htop

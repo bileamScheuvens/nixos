@@ -3,16 +3,35 @@
     enable = true;
     settings = {
       picker.name = "telescope.nvim";
+      templates.subdir = "/home/bileam/vaults/templates";
       workspaces = [
         {
           name = "personal";
-          path = "~/vaults/vault";
+          path = "/home/bileam/vaults/personal";
         }
         {
           name = "uni";
-          path = "~/vaults/uni";
+          path = "/home/bileam/vaults/uni";
         }
       ];
+      note_id_func = ''
+        function(title)
+          local id = "unnamed"
+          
+          if title ~= nil then
+            -- If title is given, transform it into a valid file name
+            id = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", "")
+          end
+          id = id .. "-"
+          
+          -- Add 4 random uppercase letters to the id
+          for _ = 1, 4 do
+            id = id .. string.char(math.random(65, 90))
+          end
+          
+          return id
+        end
+      '';
     };
   };
 }

@@ -7,6 +7,7 @@
     relativenumber = true;
     signcolumn = "yes";
     scrolloff = 4;
+    conceallevel = 1;
 
     # indentation
     shiftwidth = 2;

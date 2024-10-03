@@ -21,5 +21,16 @@
       nowait = true;
     };
   }
+  # obsidian new note and insert template
+  {
+    mode = "n";
+    key = "<leader>on";
+    action = "<cmd>ObsidianNew<CR>";
+  }
+  {
+    mode = "n";
+    key = "<leader>ot";
+    action = "<cmd>ObsidianTemplate<CR>";
+  }
   ];
 }

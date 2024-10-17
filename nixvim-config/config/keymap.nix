@@ -29,6 +29,11 @@
   }
   {
     mode = "n";
+    key = "<leader>oN";
+    action = "<cmd>ObsidianNewFromTemplate<CR>";
+  }
+  {
+    mode = "n";
     key = "<leader>ot";
     action = "<cmd>ObsidianTemplate<CR>";
   }

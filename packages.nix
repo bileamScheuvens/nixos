@@ -32,9 +32,13 @@
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
   
-  # development
+  # text editing
   vscode
   vim
+  inputs.nixvim.packages."${system}".default
+  texliveMedium
+
+  # development
   julia
   python312
   poetry
@@ -45,7 +49,6 @@
   cmake
   extra-cmake-modules
   universal-ctags
-  inputs.nixvim.packages."${system}".default
   
   # games
   crawl

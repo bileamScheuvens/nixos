@@ -3,6 +3,13 @@
 {
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
+
   # 2fa
   security.pam = {
     u2f.settings = {

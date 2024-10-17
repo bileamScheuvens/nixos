@@ -6,6 +6,7 @@
     ./lsp.nix
     ./ui_plugins.nix
     ./options.nix
+    ./vimtext.nix
     ./nav_plugins.nix
     ./misc_plugins.nix
 	];

@@ -24,9 +24,9 @@
       };
 
       servers = {
-        lua-ls.enable = true;
+        lua_ls.enable = true;
         pyright.enable = true;
-        julials.enable = true;
+        # julials.enable = true;
         texlab.enable = true;
       };
     };

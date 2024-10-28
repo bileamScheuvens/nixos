@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 let 
-  texPackages = import ./tex.nix {inherit config pkgs;}
+  texPackages = import ./tex.nix { inherit config pkgs; };
 in
 {
   environment.systemPackages = with pkgs; [
@@ -53,6 +53,8 @@ in
   cmake
   extra-cmake-modules
   universal-ctags
+  libz
+  stdenv.cc.cc.lib
   
   # games
   crawl

@@ -2,8 +2,7 @@
 
 let
   tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive) scheme-medium
-    bbm
+    inherit (pkgs.texlive) scheme-full;
   });
 in
 {

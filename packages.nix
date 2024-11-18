@@ -22,6 +22,7 @@ in
   wget
   curl
   unzip
+  zip
   powertop
   busybox
   fzf
@@ -66,10 +67,14 @@ in
   wireguard-tools
   wireshark
   tshark
+  networkmanagerapplet
+  networkmanager-sstp
+  ppp
 
   # media
   v4l-utils
   mpv
+  kitty
 
   # 2fa
   pam_u2f

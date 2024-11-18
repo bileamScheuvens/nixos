@@ -119,5 +119,9 @@
       };
     };
   };  
-
+  ###### matchup ######
+  plugins.vim-matchup = {
+    enable = true;
+    enableSurround = true;
+  };
 }

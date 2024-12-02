@@ -16,6 +16,7 @@ in
 
   # productivity
   obsidian
+  mako
   
   # utilities
   htop
@@ -23,6 +24,8 @@ in
   curl
   unzip
   zip
+  grim
+  slurp
   powertop
   busybox
   fzf
@@ -32,6 +35,8 @@ in
   zoxide
   ripgrep
   wl-clipboard
+  cliphist
+  libsecret
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -56,12 +61,13 @@ in
   universal-ctags
   libz
   stdenv.cc.cc.lib
-  
+
   # games
   crawl
   
   # browsing
   google-chrome
+  wofi
 
   # networking
   wireguard-tools
@@ -75,11 +81,24 @@ in
   v4l-utils
   mpv
   kitty
+  pipewire
+  brightnessctl
+  pavucontrol
 
-  # 2fa
+  # ui
+  nwg-look
+  fira-code
+  fira-code-symbols
+  font-awesome
+  nerdfonts
+  hyprlock
+
+  # authentication
   pam_u2f
   libu2f-host
   libu2f-server
+  hyprpolkitagent
+  bitwarden-desktop
 
   ];
 

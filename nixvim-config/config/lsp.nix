@@ -25,10 +25,34 @@
 
       servers = {
         lua_ls.enable = true;
-        pyright.enable = true;
+        ruff.enable = true;
         # julials.enable = true;
         texlab.enable = true;
       };
+    };
+
+  treesitter = {
+    enable = true;
+
+    settings = {
+      highlight.enable = true;
+      hightlight.additional_vim_regex_highlighting = true;
+      ensure_installed = [
+        "python"
+        "comment"
+        "json"
+        "latex"
+        "markdown"
+        "regex"
+        "yaml"
+        "html"
+        "toml"
+        "nix"
+        "julia"
+      ];
+    };
+    folding = true;
+
     };
   };
 }

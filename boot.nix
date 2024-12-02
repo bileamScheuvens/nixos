@@ -10,6 +10,9 @@
   };
   services.blueman.enable = true;
 
+  # keyring
+  services.gnome.gnome-keyring.enable = true;
+
   # 2fa
   security.pam = {
     u2f.settings = {
@@ -18,6 +21,9 @@
       cue = true;
     };
     services = {
+      login.enableGnomeKeyring = true;
+      login.kwallet.enable = true;
+
       sddm = {
         u2fAuth = true;
         nodelay = true;

@@ -4,6 +4,7 @@
     fidget.enable = true;
     lsp = {
       enable = true;
+      inlayHints = true;
 
       keymaps = {
         silent = true;
@@ -26,6 +27,11 @@
       servers = {
         lua_ls.enable = true;
         ruff.enable = true;
+        pylsp = {
+          enable = true;
+          settings.plugins = {
+          };
+        };
         # julials.enable = true;
         texlab.enable = true;
       };
@@ -35,8 +41,14 @@
     enable = true;
 
     settings = {
-      highlight.enable = true;
-      hightlight.additional_vim_regex_highlighting = true;
+      highlight = {
+        enable = true;
+        additional_vim_regex_highlighting = true;
+        disable = [
+          "latex"
+        ];
+      };
+      auto_install = false;
       ensure_installed = [
         "python"
         "comment"
@@ -49,10 +61,12 @@
         "toml"
         "nix"
         "julia"
+        "bibtex"
+        "vim"
       ];
     };
-    folding = true;
 
     };
   };
 }
+

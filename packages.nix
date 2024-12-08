@@ -62,6 +62,17 @@ in
   libz
   stdenv.cc.cc.lib
 
+  # deps for PyQt6
+  libxkbcommon
+  xorg.libX11
+  fontconfig
+  glib
+  freetype
+  zstd
+  dbus
+  xcb-util-cursor
+  wayland
+
   # games
   crawl
   
@@ -90,7 +101,6 @@ in
   fira-code
   fira-code-symbols
   font-awesome
-  nerdfonts
   hyprlock
 
   # authentication
@@ -105,7 +115,9 @@ in
   programs.steam.enable = true;
   programs.tmux = {
     enable = true;
+    shortcut = "a";
     escapeTime = 0;
+    secureSocket = false;
     extraConfig = "
 set-option -g mouse on
 set -ga terminal-overrides \",xterm-256color:Tc\"

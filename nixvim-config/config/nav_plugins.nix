@@ -54,11 +54,11 @@
             desc = "[S]earch [F]iles";
           };
         };
-        "<leader>ss" = {
+        "<leader>sb" = {
           mode = "n";
           action = "builtin";
           options = {
-            desc = "[S]earch [S]elect Telescope";
+            desc = "[S]earch Telescope [B]uiltin";
           };
         };
         "<leader>sw" = {
@@ -80,6 +80,13 @@
           action = "diagnostics";
           options = {
             desc = "[S]earch [D]iagnostics";
+          };
+        };
+        "<leader>ss"= {
+          mode = "n";
+          action = "treesitter";
+          options = {
+            desc = "[S]earch [S]ymbols";
           };
         };
         "<leader>sr" = {

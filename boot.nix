@@ -22,6 +22,7 @@
     };
     services = {
       login.enableGnomeKeyring = true;
+      login.enableKwallet = true;
       login.kwallet.enable = true;
 
       sddm = {
@@ -40,8 +41,12 @@
       RUN+="${pkgs.systemd}/bin/loginctl lock-sessions"
   '';
 
+
+  systemd.services.NetworkManager-wait-online.enable = false;
   environment.variables = rec {
     VIMINIT = "source ~/dotfiles/.vimrc";    
+    QT_QPA_PLATFORM = "wayland";
+    ANKI_WAYLAND = 1;
   };
   # fingerprint sensor. Disabled as it causes massive login lag for some reason
   # services.fprintd.enable = true;

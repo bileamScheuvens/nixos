@@ -17,6 +17,7 @@ in
   # productivity
   obsidian
   mako
+  anki-bin
   
   # utilities
   htop
@@ -61,6 +62,7 @@ in
   universal-ctags
   libz
   stdenv.cc.cc.lib
+  swig
 
   # deps for PyQt6
   libxkbcommon
@@ -105,6 +107,7 @@ in
 
   # authentication
   pam_u2f
+  kwallet-pam
   libu2f-host
   libu2f-server
   hyprpolkitagent
@@ -115,7 +118,7 @@ in
   programs.steam.enable = true;
   programs.tmux = {
     enable = true;
-    shortcut = "a";
+    shortcut = "b";
     escapeTime = 0;
     secureSocket = false;
     extraConfig = "

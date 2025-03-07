@@ -23,6 +23,7 @@
       # [[ Configure Telescope ]]
       # See `:help telescope` and `:help telescope.setup()`
       enable = true;
+      settings.defaults.preview.treesitter = false;
 
       # Enable Telescope extensions
       extensions = {

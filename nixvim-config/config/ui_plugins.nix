@@ -15,6 +15,7 @@
   # https://nix-community.github.io/nixvim/plugins/neo-tree/index.html?highlight=neo-tree#pluginsneo-treepackage
   plugins.neo-tree = {
     enable = true;
+    window.position = "right";
 
     filesystem = {
       window = {

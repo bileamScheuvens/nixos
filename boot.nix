@@ -44,6 +44,9 @@
 
   systemd.services.NetworkManager-wait-online.enable = false;
   environment.variables = rec {
+    EDITOR = "nvim";
+    SYSTEM_EDITOR = "nvim";
+    VISUAL = "nvim";
     VIMINIT = "source ~/dotfiles/.vimrc";    
     QT_QPA_PLATFORM = "wayland";
     ANKI_WAYLAND = 1;

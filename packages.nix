@@ -13,6 +13,7 @@ in
   discord
   teams-for-linux
   signal-desktop
+  telegram-desktop
 
   # productivity
   obsidian

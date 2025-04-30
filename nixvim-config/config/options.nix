@@ -33,7 +33,7 @@
     undodir.__raw = "vim.fs.normalize('~/.vim/undodir')";
 
     # misc
-    timeoutlen = 250;
+    timeoutlen = 300;
     termguicolors = true;
   };
 }

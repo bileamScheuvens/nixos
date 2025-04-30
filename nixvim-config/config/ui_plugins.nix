@@ -4,6 +4,10 @@
     enable = true;
     settings = {
       flavour = "mocha";
+      custom_highlights = {
+        LineNr = { fg = "#888888"; };
+        CursorLineNr = { fg = "#ffffff"; bold = true; };
+      };
     };
    };
   

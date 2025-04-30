@@ -39,6 +39,7 @@ in
   wl-clipboard
   cliphist
   libsecret
+  ffmpeg
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod

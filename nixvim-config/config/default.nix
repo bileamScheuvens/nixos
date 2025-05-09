@@ -6,8 +6,9 @@
     ./lsp.nix
     ./ui_plugins.nix
     ./options.nix
-    ./vimtext.nix
+    ./vimtex.nix
     ./nav_plugins.nix
     ./misc_plugins.nix
+    ./extra_plugins.nix
 	];
 }

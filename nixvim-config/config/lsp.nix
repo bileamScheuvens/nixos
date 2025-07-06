@@ -19,7 +19,7 @@
             gD = "references";
             gt = "type_definition";
             gi = "implementation";
-            K = "hover";
+            H = "hover";
             "<F2>" = "rename";
           };
       };
@@ -33,6 +33,7 @@
           };
         };
         # julials.enable = true;
+        tinymist.enable = true;
         texlab.enable = true;
       };
     };

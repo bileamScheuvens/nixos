@@ -109,24 +109,6 @@
         extensions.__raw = "{ ['ui-select'] = { require('telescope.themes').get_dropdown() } }";
       };
     };
-  ###### harpoon ######
-  plugins.harpoon = {
-    enable = true;
-
-    keymapsSilent = true;
-
-    keymaps = {
-      addFile = "<leader>a";
-      toggleQuickMenu = "<C-e>";
-      navNext = "<leader>n";
-      navPrev = "<leader>p";
-      navFile = {
-        "1" = "<C-j>";
-        "2" = "<C-k>";
-        "3" = "<C-l>";
-      };
-    };
-  };  
   ###### matchup ######
   plugins.vim-matchup = {
     enable = true;

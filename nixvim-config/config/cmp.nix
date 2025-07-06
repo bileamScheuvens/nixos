@@ -8,7 +8,16 @@
         disable_filetype = ["TelescopePrompt" "vim"];
       };
     };
-    luasnip.enable = true;
+    luasnip= {
+      enable = true;
+      fromLua = [
+      {
+        lazyLoad = true;
+        paths = ./snippets;
+      }
+      ];
+    };
+
 
     lspkind = {
       enable = true;
@@ -56,6 +65,5 @@
 
     };
   };
-
 }
 

@@ -2,7 +2,7 @@
 
 let
   tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive) scheme-full;
+    inherit (pkgs.texlive) scheme-basic;
   });
 in
 {

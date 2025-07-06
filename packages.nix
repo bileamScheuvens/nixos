@@ -14,11 +14,14 @@ in
   teams-for-linux
   signal-desktop
   telegram-desktop
+  element-desktop
+  thunderbird
 
   # productivity
   obsidian
   mako
   anki-bin
+  presenterm
   
   # utilities
   htop
@@ -40,6 +43,9 @@ in
   cliphist
   libsecret
   ffmpeg
+  graphviz
+  tokei
+  wiki-tui
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -49,6 +55,7 @@ in
   vim
   inputs.nixvim.packages."${system}".default
   texPackages.tex
+  typst
   
 
   # development
@@ -109,7 +116,7 @@ in
 
   # authentication
   pam_u2f
-  kwallet-pam
+  kdePackages.kwallet-pam
   libu2f-host
   libu2f-server
   hyprpolkitagent

@@ -8,17 +8,17 @@ return {
   s("def", {
     t("#definition(title: \""),
     i(1, "title"),
-    t({"\")[", "", "]"}),
+    t({"\")[", "]"}),
   }),
   s("thm", {
     t("#theorem(title: \""),
     i(1, "title"),
-    t({"\")[", "", "]"}),
+    t({"\")[", "]"}),
   }),
   s("alg", {
     t("#algorithm(title: \""),
     i(1, "title"),
-    t({"\")[", "", "]"}),
+    t({"\")[", "]"}),
   })
 }
 

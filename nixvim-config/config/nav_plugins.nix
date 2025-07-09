@@ -109,9 +109,11 @@
         extensions.__raw = "{ ['ui-select'] = { require('telescope.themes').get_dropdown() } }";
       };
     };
-  ###### matchup ######
+  ###### surround & matchup ######
+  plugins.vim-surround.enable = true;
   plugins.vim-matchup = {
     enable = true;
-    enableSurround = true;
+    settings.surround_enabled = 1;
   };
+
 }

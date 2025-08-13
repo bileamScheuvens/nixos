@@ -35,6 +35,7 @@
         # julials.enable = true;
         tinymist.enable = true;
         texlab.enable = true;
+        clangd.enable = true;
       };
     };
 
@@ -64,6 +65,7 @@
         "julia"
         "bibtex"
         "vim"
+        "c"
       ];
     };
 

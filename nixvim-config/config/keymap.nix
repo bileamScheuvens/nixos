@@ -21,6 +21,23 @@
       nowait = true;
     };
   }
+  # make
+  {
+    mode = "n";
+    key = "<leader>mk";
+    action = "<cmd>make<CR>";
+  }
+  # quickfix navigation
+   {
+    mode = "n";
+    key = "<M-j>";
+    action = "<cmd>cnext<CR>";
+  } 
+  {
+    mode = "n";
+    key = "<M-k>";
+    action = "<cmd>cprev<CR>";
+  }
   # obsidian new note and insert template
   {
     mode = "n";

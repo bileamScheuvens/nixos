@@ -56,6 +56,8 @@ in
   inputs.nixvim.packages."${system}".default
   texPackages.tex
   typst
+  pandoc
+  zotero
   
 
   # development

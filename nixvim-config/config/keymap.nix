@@ -42,17 +42,17 @@
   {
     mode = "n";
     key = "<leader>on";
-    action = "<cmd>ObsidianNew<CR>";
+    action = "<cmd>Obsidian new<CR>";
   }
   {
     mode = "n";
     key = "<leader>oN";
-    action = "<cmd>ObsidianNewFromTemplate<CR>";
+    action = "<cmd>Obsidian new_from_template<CR>";
   }
   {
     mode = "n";
     key = "<leader>ot";
-    action = "<cmd>ObsidianTemplate<CR>";
+    action = "<cmd>Obsidian template<CR>";
   }
   ];
 }

@@ -3,6 +3,7 @@
   plugins.obsidian = {
     enable = true;
     settings = {
+      opts.legacy_commands = false;
       picker.name = "telescope.nvim";
       templates =  {
         subdir = "/home/bileam/vaults/templates";

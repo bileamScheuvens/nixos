@@ -1,7 +1,7 @@
 {
   plugins.conjure.enable = true;
   plugins.obsidian = {
-    enable = true;
+    enable = false;
     settings = {
       opts.legacy_commands = false;
       picker.name = "telescope.nvim";

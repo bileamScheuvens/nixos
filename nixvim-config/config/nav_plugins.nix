@@ -62,6 +62,13 @@
             desc = "[S]earch Telescope [B]uiltin";
           };
         };
+        "<leader>sr" = {
+          mode = "n";
+          action = "registers";
+          options = {
+            desc = "[S]earch [R]egisters";
+          };
+        };
         "<leader>sw" = {
           mode = "n";
           action = "grep_string";
@@ -90,11 +97,11 @@
             desc = "[S]earch [S]ymbols";
           };
         };
-        "<leader>sr" = {
+        "<leader>sl" = {
           mode = "n";
           action = "resume";
           options = {
-            desc = "[S]earch [R]esume";
+            desc = "[S]earch resume [L]ast";
           };
         };
         "<leader>so" = {

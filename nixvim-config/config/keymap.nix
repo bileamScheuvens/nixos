@@ -39,20 +39,20 @@
     action = "<cmd>cprev<CR>";
   }
   # obsidian new note and insert template
-  {
-    mode = "n";
-    key = "<leader>on";
-    action = "<cmd>Obsidian new<CR>";
-  }
-  {
-    mode = "n";
-    key = "<leader>oN";
-    action = "<cmd>Obsidian new_from_template<CR>";
-  }
-  {
-    mode = "n";
-    key = "<leader>ot";
-    action = "<cmd>Obsidian template<CR>";
-  }
+  # {
+  #   mode = "n";
+  #   key = "<leader>on";
+  #   action = "<cmd>Obsidian new<CR>";
+  # }
+  # {
+  #   mode = "n";
+  #   key = "<leader>oN";
+  #   action = "<cmd>Obsidian new_from_template<CR>";
+  # }
+  # {
+  #   mode = "n";
+  #   key = "<leader>ot";
+  #   action = "<cmd>Obsidian template<CR>";
+  # }
   ];
 }

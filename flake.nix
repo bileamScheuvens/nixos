@@ -10,7 +10,6 @@
   };
 
   outputs = { self, nixpkgs, nixvim, ... }@inputs: {
-    # Please replace my-nixos with your hostname
     nixosConfigurations.Theseus = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };

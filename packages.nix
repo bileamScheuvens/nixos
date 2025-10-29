@@ -22,6 +22,7 @@ in
   mako
   anki-bin
   presenterm
+  libreoffice
   
   # utilities
   htop
@@ -35,8 +36,6 @@ in
   busybox
   fzf
   tldr
-  bat
-  eza
   zoxide
   ripgrep
   wl-clipboard
@@ -46,6 +45,7 @@ in
   graphviz
   tokei
   wiki-tui
+  nix-index
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -74,6 +74,7 @@ in
   libz
   stdenv.cc.cc.lib
   swig
+  gcc-arm-embedded # remove after pulpa
 
   # deps for PyQt6
   libxkbcommon
@@ -88,6 +89,7 @@ in
 
   # games
   crawl
+  vimgolf
   
   # browsing
   google-chrome
@@ -113,7 +115,6 @@ in
   nwg-look
   fira-code
   fira-code-symbols
-  font-awesome
   hyprlock
 
   # authentication

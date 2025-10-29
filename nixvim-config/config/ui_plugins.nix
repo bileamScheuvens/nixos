@@ -20,14 +20,8 @@
   # https://nix-community.github.io/nixvim/plugins/neo-tree/index.html?highlight=neo-tree#pluginsneo-treepackage
   plugins.neo-tree = {
     enable = true;
-    window.position = "right";
-
-    filesystem = {
-      window = {
-        mappings = {
-          "\\" = "close_window";
-        };
-      };
+    settings = {
+      window.position = "right";
     };
   };
 
@@ -35,9 +29,9 @@
   keymaps = [
     {
       key = "\\";
-      action = "<cmd>Neotree reveal<cr>";
+      action = "<cmd>Neotree toggle<cr>";
       options = {
-        desc = "NeoTree reveal";
+        desc = "NeoTree toggle";
       };
     }
   ];

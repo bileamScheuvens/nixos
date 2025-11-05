@@ -1,8 +1,5 @@
 { config, pkgs, inputs, ... }:
 
-let 
-  texPackages = import ./tex.nix { inherit config pkgs; };
-in
 {
   environment.systemPackages = with pkgs; [
   # version control
@@ -54,7 +51,6 @@ in
   vscode
   vim
   inputs.nixvim.packages."${system}".default
-  texPackages.tex
   typst
   pandoc
   zotero

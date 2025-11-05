@@ -23,9 +23,7 @@
         ./modules/battery.nix
         ./modules/boot.nix
         ./modules/hyprland.nix
-        ./modules/libs.nix
         ./modules/packages.nix
-        ./modules/tex.nix
         ./modules/vim.nix
         ./modules/vpn.nix
       ];

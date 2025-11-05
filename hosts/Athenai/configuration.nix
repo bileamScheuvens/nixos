@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "Theseus"; # Define your hostname.
+  networking.hostName = "Athenai"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -96,9 +96,6 @@
     isNormalUser = true;
     description = "Bileam Scheuvens";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
   };
   security.sudo.wheelNeedsPassword = false;
 

@@ -14,16 +14,20 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
-        # Import the previous configuration.nix we used,
-        # so the old configuration file still takes effect
-        ./configuration.nix
-        ./hyprland.nix
-        ./boot.nix
-        ./packages.nix
-        ./vim.nix
-        ./bash.nix
-        ./vpn.nix
-        ./battery.nix
+        # import host specific config
+        ./hosts/Theseus/configuration.nix
+
+
+        # import modules
+        ./modules/bash.nix
+        ./modules/battery.nix
+        ./modules/boot.nix
+        ./modules/hyprland.nix
+        ./modules/libs.nix
+        ./modules/packages.nix
+        ./modules/tex.nix
+        ./modules/vim.nix
+        ./modules/vpn.nix
       ];
     };
   };

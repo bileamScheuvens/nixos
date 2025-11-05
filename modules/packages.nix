@@ -58,6 +58,7 @@ in
   typst
   pandoc
   zotero
+  mermaid-cli
   
 
   # development

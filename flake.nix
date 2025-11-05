@@ -28,5 +28,22 @@
         ./modules/vpn.nix
       ];
     };
+    nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        # import host specific config
+        ./hosts/Athenai/configuration.nix
+
+
+        # import modules
+        ./modules/bash.nix
+        ./modules/boot.nix
+        ./modules/hyprland.nix
+        ./modules/packages.nix
+        ./modules/vim.nix
+        ./modules/vpn.nix
+      ];
+    };
   };
 }

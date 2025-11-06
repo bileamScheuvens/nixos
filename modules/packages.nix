@@ -71,7 +71,8 @@
   libz
   stdenv.cc.cc.lib
   swig
-  gcc-arm-embedded # remove after pulpa
+  tree-sitter
+  nodejs
 
   # deps for PyQt6
   libxkbcommon

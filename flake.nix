@@ -43,6 +43,7 @@
         ./modules/packages.nix
         ./modules/vim.nix
         ./modules/vpn.nix
+        ./modules/nvidia.nix
       ];
     };
   };

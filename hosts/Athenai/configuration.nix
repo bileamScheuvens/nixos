@@ -7,8 +7,20 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+    ./hardware-configuration.nix
+  ];
+
+  # Cryptsetup
+  boot.initrd.systemd.enable = true;
+  boot.initrd.luks = {
+    devices = {
+      root = {
+        device = "/dev/nvme1n1p3";
+        preLVM = true;
+      };
+    };
+  };
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -23,7 +35,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  
+
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -54,7 +66,6 @@
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
-    variant = "alt-intl";
   };
 
   # Configure console keymap
@@ -81,7 +92,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-  
+
 
   # store optimization and garbage collection
   nix.optimise.automatic = true;
@@ -99,6 +110,10 @@
   };
   security.sudo.wheelNeedsPassword = false;
 
+  # environment.variables = {
+  #   KITTY_DISABLE_WAYLAND = 1;
+  # };
+  #
   # Install firefox.
   programs.firefox.enable = true;
 

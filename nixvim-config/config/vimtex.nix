@@ -1,6 +1,10 @@
 {
   plugins.vimtex = {
     enable = true;
+    # don't build with tex, use system level
+    texlivePackage = null;
+
+
 
     settings = {
       view_method = "zathura";

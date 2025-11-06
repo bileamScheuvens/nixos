@@ -5,6 +5,7 @@
   # version control
   git
   git-lfs
+  stow
 
   # social
   discord
@@ -41,8 +42,8 @@
   ffmpeg
   graphviz
   tokei
-  wiki-tui
   nix-index
+  localsend
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod

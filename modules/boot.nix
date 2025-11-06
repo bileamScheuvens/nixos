@@ -2,6 +2,7 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  services.fwupd.enable = true;
 
   # bluetooth
   hardware.bluetooth = {

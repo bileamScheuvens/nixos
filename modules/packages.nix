@@ -117,12 +117,11 @@
   hyprlock
 
   # authentication
-  pam_u2f
-  kdePackages.kwallet-pam
   libu2f-host
   libu2f-server
   hyprpolkitagent
   bitwarden-desktop
+  tuigreet
 
   ];
 

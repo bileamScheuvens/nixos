@@ -23,8 +23,7 @@
     };
     services = {
       login.enableGnomeKeyring = true;
-      login.enableKwallet = true;
-      login.kwallet.enable = true;
+      greetd.enableGnomeKeyring = true;
 
       sddm = {
         u2fAuth = true;

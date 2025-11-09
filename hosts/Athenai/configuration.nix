@@ -15,8 +15,9 @@
   boot.initrd.luks = {
     devices = {
       root = {
-        device = "/dev/nvme1n1p3";
+        device = "/dev/disk/by-uuid/c82ab6ec-cc3d-46f1-ac62-3f4dba647079";
         preLVM = true;
+        keyFileTimeout = 5;
       };
     };
   };
@@ -35,6 +36,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  # allow localsend
+  networking.firewall.allowedTCPPorts = [ 53317 ];
+  networking.firewall.allowedUDPPorts = [ 53317 ];
 
 
   # Set your time zone.
@@ -56,12 +60,16 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver.enable = false;
 
   # Enable the KDE Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  services.greetd = {
+    enable = true;
+    settings.default_session = {
+      command = "tuigreet --remember --cmd Hyprland";
+      user = "bileam";
+    };
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -110,10 +118,6 @@
   };
   security.sudo.wheelNeedsPassword = false;
 
-  # environment.variables = {
-  #   KITTY_DISABLE_WAYLAND = 1;
-  # };
-  #
   # Install firefox.
   programs.firefox.enable = true;
 

@@ -9,7 +9,10 @@
     alias ...="cd ../.."
 
     function poetry-install-fix() {
-      poetry install --no-root && fix-python --venv $(poetry env info -p) --libs /etc/nixos/libs.nix
+      poetry install --no-root && fix-python --venv $(poetry env info -p)
+    }
+    function poetry-install-fix-full() {
+      poetry install --no-root && fix-python --venv $(poetry env info -p) --libs /etc/nixos/modules/libs.nix
     }
 
     complete -f -X "*.@(bib|pdf|png|jpg)" nvim

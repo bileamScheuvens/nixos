@@ -26,7 +26,7 @@
   # allow localsend
   networking.firewall.allowedTCPPorts = [ 53317 ];
   networking.firewall.allowedUDPPorts = [ 53317 ];
-  
+
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -47,17 +47,20 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver.enable = false;
 
   # Enable the KDE Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  services.greetd = {
+    enable = true;
+    settings.default_session = {
+      command = "tuigreet --cmd Hyprland";
+      user = "bileam";
+    };
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
-    variant = "alt-intl";
   };
 
   # Configure console keymap
@@ -84,7 +87,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-  
+
 
   # store optimization and garbage collection
   nix.optimise.automatic = true;

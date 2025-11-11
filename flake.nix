@@ -26,6 +26,7 @@
         ./modules/packages.nix
         ./modules/vim.nix
         ./modules/vpn.nix
+        ./modules/keyboard.nix
       ];
     };
     nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {
@@ -44,6 +45,7 @@
         ./modules/vim.nix
         ./modules/vpn.nix
         ./modules/nvidia.nix
+        ./modules/keyboard.nix
       ];
     };
   };

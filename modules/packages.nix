@@ -14,6 +14,7 @@
   telegram-desktop
   element-desktop
   thunderbird
+  slack
 
   # productivity
   obsidian
@@ -114,7 +115,6 @@
   nwg-look
   fira-code
   fira-code-symbols
-  hyprlock
 
   # authentication
   libu2f-host

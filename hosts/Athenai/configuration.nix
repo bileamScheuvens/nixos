@@ -66,7 +66,7 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-      command = "tuigreet --remember --cmd Hyprland";
+      command = "tuigreet --time --remember --cmd Hyprland";
       user = "bileam";
     };
   };

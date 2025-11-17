@@ -31,7 +31,6 @@
   zip
   grim
   slurp
-  powertop
   busybox
   fzf
   tldr

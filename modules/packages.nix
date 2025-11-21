@@ -22,6 +22,7 @@
   anki-bin
   presenterm
   libreoffice
+  starship
   
   # utilities
   htop

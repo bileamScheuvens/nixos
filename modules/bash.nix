@@ -3,6 +3,7 @@
 {
   environment.interactiveShellInit = ''
     eval "$(zoxide init bash)"
+    eval "$(starship init bash)"
 
     alias icat="kitten icat"
     alias ..="cd .."

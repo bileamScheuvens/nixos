@@ -2,8 +2,8 @@
 
 {
   environment.interactiveShellInit = ''
-    eval "$(zoxide init bash)"
     eval "$(starship init bash)"
+    eval "$(zoxide init bash)"
 
     alias icat="kitten icat"
     alias ..="cd .."
@@ -17,7 +17,7 @@
     }
 
     # ignore certain endings for nvim
-    complete -f -X "*.@(bib|pdf|png|jpg)" nvim
+    complete -f -X "*.@(lock|bib|pdf|png|jpg)" nvim
 
     # ctrl+backspace to delete word
     bind '"\C-H": backward-kill-word'

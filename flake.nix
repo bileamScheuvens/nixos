@@ -24,7 +24,6 @@
         ./modules/boot.nix
         ./modules/hyprland.nix
         ./modules/packages.nix
-        ./modules/vim.nix
         ./modules/vpn.nix
         ./modules/keyboard.nix
       ];
@@ -42,7 +41,6 @@
         ./modules/boot.nix
         ./modules/hyprland.nix
         ./modules/packages.nix
-        ./modules/vim.nix
         ./modules/vpn.nix
         ./modules/nvidia.nix
         ./modules/keyboard.nix

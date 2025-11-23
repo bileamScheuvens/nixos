@@ -6,6 +6,7 @@
     eval "$(zoxide init bash)"
 
     alias icat="kitten icat"
+    alias vi="nvim"
     alias ..="cd .."
     alias ...="cd ../.."
 

@@ -22,6 +22,9 @@
     };
   };
 
+  # tmp android stuff
+  programs.adb.enable = true;
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -114,7 +117,7 @@
   users.users.bileam = {
     isNormalUser = true;
     description = "Bileam Scheuvens";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
   };
   security.sudo.wheelNeedsPassword = false;
 

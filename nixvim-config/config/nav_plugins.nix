@@ -97,6 +97,13 @@
             desc = "[S]earch [S]ymbols";
           };
         };
+        "<leader>sm" = {
+          mode = "n";
+          action = "marks";
+          options = {
+            desc = "[S]earch [M]arks";
+          };
+        };
         "<leader>sl" = {
           mode = "n";
           action = "resume";

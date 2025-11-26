@@ -34,7 +34,7 @@
   slurp
   busybox
   fzf
-  tldr
+  tealdeer
   zoxide
   ripgrep
   wl-clipboard

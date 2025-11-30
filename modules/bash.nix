@@ -2,6 +2,7 @@
 
 {
   environment.interactiveShellInit = ''
+    eval "$(direnv hook bash)"
     eval "$(starship init bash)"
     eval "$(zoxide init bash)"
 
@@ -10,11 +11,11 @@
     alias ..="cd .."
     alias ...="cd ../.."
 
+
+    alias direnv_init="echo 'use flake' >> .envrc && direnv allow"
+
     function poetry-install-fix() {
       poetry install --no-root && fix-python --venv $(poetry env info -p)
-    }
-    function poetry-install-fix-full() {
-      poetry install --no-root && fix-python --venv $(poetry env info -p) --libs /etc/nixos/modules/libs.nix
     }
 
     # ignore certain endings for nvim

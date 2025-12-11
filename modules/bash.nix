@@ -8,6 +8,7 @@
 
     alias icat="kitten icat"
     alias vi="nvim"
+    alias brightness="ddcutil setvcp 10"
     alias ..="cd .."
     alias ...="cd ../.."
 

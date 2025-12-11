@@ -52,7 +52,7 @@
   # text editing
   vscode
   vim
-  inputs.nixvim.packages."${system}".default
+  inputs.nixvim.packages."${stdenv.hostPlatform.system}".default
   typst
   pandoc
   zotero
@@ -110,6 +110,8 @@
   pipewire
   brightnessctl
   pavucontrol
+  muffon
+  ddcutil
 
   # ui
   nwg-look

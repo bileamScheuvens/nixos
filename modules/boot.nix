@@ -12,6 +12,9 @@
   };
   services.blueman.enable = true;
 
+  # i2c device control
+  hardware.i2c.enable = true;
+
   # keyring
   services.gnome.gnome-keyring.enable = true;
 

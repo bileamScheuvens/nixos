@@ -102,6 +102,7 @@
   networkmanagerapplet
   networkmanager-sstp
   ppp
+  eduvpn-client
 
   # media
   v4l-utils

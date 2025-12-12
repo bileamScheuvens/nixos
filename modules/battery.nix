@@ -2,7 +2,7 @@
 
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "powersave";
+    cpuFreqGovernor = "conservative";
   };
   services.power-profiles-daemon.enable = false;
   services.tlp = {

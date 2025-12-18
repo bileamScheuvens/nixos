@@ -78,7 +78,7 @@
   users.users.bileam = {
     isNormalUser = true;
     description = "Bileam Scheuvens";
-    extraGroups = [ "networkmanager" "wheel" "video" "adbusers" ];
+    extraGroups = [ "networkmanager" "wheel" "i2c" "video" "adbusers" ];
   };
   security.sudo.wheelNeedsPassword = false;
 

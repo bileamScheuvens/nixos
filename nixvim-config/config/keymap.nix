@@ -45,6 +45,11 @@
     action = "\"+y";
   }
   {
+    mode = "v";
+    key = "<leader>p";
+    action = "\"+p";
+  }
+  {
     mode = "n";
     key = "<leader>y";
     action = "\"+y";
@@ -52,17 +57,7 @@
   {
     mode = "n";
     key = "<leader>Y";
-    action = "\"+yg_";
-  }
-  {
-    mode = "v";
-    key = "<leader>p";
-    action = "\"+p";
-  }
-  {
-    mode = "v";
-    key = "<leader>P";
-    action = "\"+P";
+    action = "\"+Y";
   }
   {
     mode = "n";
@@ -70,7 +65,7 @@
     action = "\"+p";
   }
   {
-    mode = "v";
+    mode = "n";
     key = "<leader>P";
     action = "\"+P";
   }

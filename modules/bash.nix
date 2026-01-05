@@ -8,6 +8,7 @@
 
     alias icat="kitten icat"
     alias vi="nvim"
+    alias pvi="poetry run nvim"
     alias brightness="ddcutil setvcp 10"
     alias ..="cd .."
     alias ...="cd ../.."
@@ -21,8 +22,12 @@
 
     # ignore certain endings for nvim
     complete -f -X "*.@(lock|bib|pdf|png|jpg)" nvim
+    complete -f -X "*.@(lock|bib|pdf|png|jpg)" vi
 
     # ctrl+backspace to delete word
     bind '"\C-H": backward-kill-word'
+
+    # ctrl+o to edit command in nvim
+    bind '"\C-o": edit-and-execute-command'
   '';
 }

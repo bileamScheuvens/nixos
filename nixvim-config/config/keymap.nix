@@ -6,6 +6,18 @@
   
   keymaps = [
   
+  # trigger formatting
+  {
+    mode = "n";
+    key = "<leader>t";
+    action = "<cmd>term<CR>";
+  }
+  # trigger formatting
+  {
+    mode = "n";
+    key = "<leader>f";
+    action = "<cmd>lua vim.lsp.buf.format()<CR>";
+  }
   # clear searchhighlight 
   {
     mode = "n";

@@ -81,12 +81,15 @@
   users.users.bileam = {
     isNormalUser = true;
     description = "Bileam Scheuvens";
-    extraGroups = [ "networkmanager" "wheel" "i2c" "video" "adbusers" ];
+    extraGroups = [ "networkmanager" "wheel" "i2c" "video" "adbusers" "docker" ];
   };
   security.sudo.wheelNeedsPassword = false;
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # enable docker
+  virtualisation.docker.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

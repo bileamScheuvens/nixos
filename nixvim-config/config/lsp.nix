@@ -33,11 +33,18 @@
           };
         };
         # julials.enable = true;
-        tinymist.enable = true;
+        tinymist = {
+          enable = true;
+          settings.formatterMode = "typstyle";
+
+        };
         texlab.enable = true;
         clangd.enable = true;
+        nixd.enable = true;
       };
     };
+    # sane defaults
+    lsp-format.enable = true;
 
   treesitter = {
     enable = true;

@@ -30,4 +30,8 @@
     # ctrl+o to edit command in nvim
     bind '"\C-o": edit-and-execute-command'
   '';
+
+  environment.variables = {
+    KITTY_SCROLLBACK_NVIM = "${pkgs.vimPlugins.kitty-scrollback-nvim}";
+  };
 }

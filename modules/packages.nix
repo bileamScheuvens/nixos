@@ -17,12 +17,14 @@
   slack
 
   # productivity
+  kitty
   obsidian
   mako
   anki-bin
   presenterm
   libreoffice
   starship
+
   
   # utilities
   htop
@@ -45,6 +47,7 @@
   tokei
   nix-index
   localsend
+  vimPlugins.kitty-scrollback-nvim
 
   # framework specific
   linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -107,7 +110,6 @@
   # media
   v4l-utils
   mpv
-  kitty
   pipewire
   brightnessctl
   pavucontrol

@@ -63,7 +63,7 @@
   
 
   # development
-  julia
+  julia-bin
   python312
   poetry
   python312Packages.pudb

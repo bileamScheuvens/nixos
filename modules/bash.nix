@@ -33,5 +33,6 @@
 
   environment.variables = {
     KITTY_SCROLLBACK_NVIM = "${pkgs.vimPlugins.kitty-scrollback-nvim}";
+    KITTY_SCROLLBACK_VISUAL = "${pkgs.vimPlugins.kitty-scrollback-nvim}/scripts/edit_command_line.bash";
   };
 }

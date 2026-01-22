@@ -27,7 +27,5 @@
   };
 
 
-  # tmp android stuff
-  programs.adb.enable = true;
 
 }

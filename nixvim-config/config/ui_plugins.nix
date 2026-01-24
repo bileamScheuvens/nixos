@@ -23,6 +23,14 @@
     enable = true;
     settings = {
       window.position = "right";
+      event_handlers = [{
+        event = "neo_tree_buffer_enter";
+        handler.__raw = ''
+        function(arg)
+          vim.cmd [[ setlocal relativenumber ]]
+        end
+        '';
+        }];
     };
   };
 

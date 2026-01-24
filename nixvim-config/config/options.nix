@@ -5,9 +5,10 @@
     # style
     number = true;
     relativenumber = true;
-    signcolumn = "yes";
+    signcolumn = "auto";
     scrolloff = 4;
     conceallevel = 1;
+    showtabline = 0;
 
     # indentation
     shiftwidth = 2;
@@ -33,7 +34,7 @@
     undodir.__raw = "vim.fs.normalize('~/.vim/undodir')";
 
     # misc
-    timeoutlen = 400;
+    timeoutlen = 300;
     termguicolors = true;
   };
 }

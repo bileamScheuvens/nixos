@@ -5,7 +5,7 @@
     # style
     number = true;
     relativenumber = true;
-    signcolumn = "auto";
+    signcolumn = "yes";
     scrolloff = 4;
     conceallevel = 1;
     showtabline = 0;
@@ -36,5 +36,6 @@
     # misc
     timeoutlen = 300;
     termguicolors = true;
+    modeline = false;
   };
 }

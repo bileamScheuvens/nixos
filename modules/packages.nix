@@ -78,6 +78,7 @@
   swig
   tree-sitter
   nodejs
+  pre-commit
 
   # deps for PyQt6
   libxkbcommon

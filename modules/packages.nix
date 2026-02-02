@@ -96,8 +96,8 @@
   vimgolf
   
   # browsing
-  google-chrome
-  wofi
+  qutebrowser
+  fuzzel
 
   # networking
   wireguard-tools

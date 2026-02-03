@@ -126,7 +126,9 @@
   libu2f-host
   libu2f-server
   hyprpolkitagent
+  keyutils
   bitwarden-desktop
+  bitwarden-cli
   tuigreet
 
   ];

@@ -26,6 +26,7 @@
         ./modules/packages.nix
         ./modules/vpn.nix
         ./modules/keyboard.nix
+        ./modules/qutebrowser.nix
       ];
     };
     nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {
@@ -44,6 +45,7 @@
         ./modules/vpn.nix
         ./modules/nvidia.nix
         ./modules/keyboard.nix
+        ./modules/qutebrowser.nix
       ];
     };
   };

@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -96,7 +96,6 @@
   vimgolf
   
   # browsing
-  qutebrowser
   fuzzel
 
   # networking

@@ -26,12 +26,15 @@
   starship
 
   
+  # compression 
+  zip
+  zstd
+
   # utilities
   htop
   wget
   curl
   unzip
-  zip
   grim
   slurp
   busybox
@@ -47,6 +50,7 @@
   tokei
   nix-index
   localsend
+  fd
   vimPlugins.kitty-scrollback-nvim
 
   # framework specific
@@ -82,11 +86,10 @@
 
   # deps for PyQt6
   libxkbcommon
-  xorg.libX11
+  libX11
   fontconfig
   glib
   freetype
-  zstd
   dbus
   xcb-util-cursor
   wayland

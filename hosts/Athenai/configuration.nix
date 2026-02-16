@@ -25,6 +25,10 @@
       };
     };
   };
+  powerManagement = {
+    enable = true;
+    cpuFreqGovernor = "conservative";
+  };
 
 
 

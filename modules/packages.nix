@@ -15,6 +15,7 @@
   element-desktop
   thunderbird
   slack
+  dunst
 
   # productivity
   kitty

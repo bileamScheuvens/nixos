@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   # Bootloader.
@@ -48,6 +48,12 @@
     };
   };
 
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
+  home-manager.users.bileam = ../users/bileam.nix;
+  home-manager.extraSpecialArgs = { inherit inputs; };
+  environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -85,6 +91,7 @@
   };
   security.sudo.wheelNeedsPassword = false;
 
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -97,6 +104,7 @@
   # direnv for cached shells
   programs.direnv.enable = true;
 
+  # TODO figure out if this is necessary
   # binary caches
   nix.settings = {
     substituters = [

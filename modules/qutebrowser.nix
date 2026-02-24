@@ -2,6 +2,8 @@
 {
   environment.systemPackages = with pkgs; [
     qutebrowser
+    rbw # unofficial bitwarden cli
+    pinentry-tty
   ];
 
   xdg.mime.defaultApplications = {

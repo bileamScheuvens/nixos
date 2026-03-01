@@ -55,7 +55,7 @@
         ./modules/qutebrowser.nix
         ./modules/hyprland.nix
         ./modules/fonts.nix
-        # ./modules/obs.nix
+        ./modules/obs.nix
       ];
     };
   };

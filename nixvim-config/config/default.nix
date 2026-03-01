@@ -10,6 +10,6 @@
     ./options.nix
     ./ui_plugins.nix
     ./user_commands.nix
-    ./vimtex.nix
+    # ./vimtex.nix
 	];
 }

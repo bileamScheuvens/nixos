@@ -81,6 +81,13 @@
     key = "<leader>P";
     action = "\"+P";
   }
+  # copy current file path to system clipboard
+  {
+    mode = "n";
+    key = "yp";
+    action = "<cmd>let @+ = expand(\"%:p\")<CR>";
+  }
+
 
   # obsidian new note and insert template
   # {

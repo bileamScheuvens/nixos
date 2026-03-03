@@ -96,6 +96,14 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # gnupg
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-tty;
+    enableSSHSupport = true;
+  };
+
+
   # enable docker
   virtualisation.docker.enable = true;
 

@@ -1,10 +1,10 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
   hardware.graphics.enable = true;
 
-  # boot.initrd.kernelModules = [ "nvidia" "i915" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
-  boot.initrd.kernelModules = [ "nvidia" "nvidia_drm" "nvidia_modeset"];
+  # boot.initrd.kernelModules = [ "195" ];
+  boot.initrd.kernelModules = [ "nvidia" "nvidia_drm" "nvidia_uvm" "nvidia_modeset"];
 
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {

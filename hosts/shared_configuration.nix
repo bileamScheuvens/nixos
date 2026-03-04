@@ -44,22 +44,22 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-      command = "tuigreet --time --remember --cmd start-hyprland";
+      command = "tuigreet --time --remember --cmd 'uwsm start hyprland-uwsm.desktop'";
       user = "bileam";
     };
   };
 
-  home-manager.useGlobalPkgs = true;
-  home-manager.useUserPackages = true;
-  home-manager.users.bileam = ../users/bileam.nix;
-  home-manager.extraSpecialArgs = { inherit inputs; };
-  environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
+  # home-manager.useGlobalPkgs = true;
+  # home-manager.useUserPackages = true;
+  # home-manager.users.bileam = ../users/bileam.nix;
+  # home-manager.extraSpecialArgs = { inherit inputs; };
+  # environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
 
   xdg.portal = {
     enable = true;
+    wlr.enable = false;
     xdgOpenUsePortal = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [ "hyprland" "gtk" ];
   };
 
   # Configure keymap in X11

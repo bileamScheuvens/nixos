@@ -11,10 +11,10 @@
       url = "path:nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri-flake.url = "github:sodiboo/niri-flake";
+    # niri-flake.url = "github:sodiboo/niri-flake";
   };
 
-  outputs = { self, nixpkgs, niri-flake, home-manager, nixvim, ... }@inputs: {
+  outputs = { self, nixpkgs, nixvim, ... }@inputs: {
     nixosConfigurations.Theseus = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -42,7 +42,7 @@
       modules = [
         # import host specific config
         ./hosts/Athenai/configuration.nix
-        home-manager.nixosModules.home-manager
+        # home-manager.nixosModules.home-manager
 
 
         # import modules

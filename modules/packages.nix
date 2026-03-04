@@ -69,9 +69,8 @@
 
   # development
   julia-bin
-  python312
+  python3
   poetry
-  python312Packages.pudb
   gcc
   libgcc
   gnumake
@@ -114,7 +113,6 @@
   # media
   v4l-utils
   mpv
-  pipewire
   brightnessctl
   pavucontrol
   muffon

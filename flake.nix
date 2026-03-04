@@ -14,14 +14,14 @@
     niri-flake.url = "github:sodiboo/niri-flake";
   };
 
-  outputs = { self, nixpkgs, nixvim, niri-flake, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, niri-flake, home-manager, nixvim, ... }@inputs: {
     nixosConfigurations.Theseus = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         # import host specific config
         ./hosts/Theseus/configuration.nix
-        home-manager.nixosModules.home-manager
+        # home-manager.nixosModules.home-manager
 
 
         # import modules

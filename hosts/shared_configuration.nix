@@ -55,6 +55,13 @@
   home-manager.extraSpecialArgs = { inherit inputs; };
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
 
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
+    config.common.default = [ "hyprland" "gtk" ];
+  };
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -129,9 +136,6 @@
 
   # Enable Flakes and new nix CLI
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

@@ -3,7 +3,6 @@
 {
   hardware.graphics.enable = true;
 
-  # boot.initrd.kernelModules = [ "195" ];
   boot.initrd.kernelModules = [ "nvidia" "nvidia_drm" "nvidia_uvm" "nvidia_modeset"];
 
   services.xserver.videoDrivers = [ "nvidia" ];

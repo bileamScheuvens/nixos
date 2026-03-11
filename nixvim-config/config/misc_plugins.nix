@@ -5,7 +5,7 @@
     settings = {
       opts.legacy_commands = false;
       picker.name = "telescope.nvim";
-      templates =  {
+      templates = {
         subdir = "/home/bileam/vaults/templates";
         substitutions = {
           zkID = ''
@@ -16,7 +16,7 @@
               end
               return id
             end
-            '';
+          '';
         };
       };
       workspaces = [

@@ -4,11 +4,11 @@
     enable = true;
     package = pkgs.symlinkJoin {
       name = "sioyek-hotfix";
-      paths = [pkgs.sioyek];
-      buildInputs = [pkgs.makeWrapper];
+      paths = [ pkgs.sioyek ];
+      buildInputs = [ pkgs.makeWrapper ];
       postBuild = ''
-      wrapProgram $out/bin/sioyek \
-          --set QT_QPA_PLATFORM xcb --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [pkgs.pipewire]}
+        wrapProgram $out/bin/sioyek \
+            --set QT_QPA_PLATFORM xcb --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [ pkgs.pipewire ]}
       '';
     };
     config = {
@@ -43,11 +43,11 @@
   };
 
   xdg.mimeApps.defaultApplications = {
-    "application/pdf" = ["sioyek.desktop"];
-    "application/x-pdf" = ["sioyek.desktop"];
-    "application/fdf" = ["sioyek.desktop"];
-    "application/xpdf" = ["sioyek.desktop"];
-    "application/pdx" = ["sioyek.desktop"];
+    "application/pdf" = [ "sioyek.desktop" ];
+    "application/x-pdf" = [ "sioyek.desktop" ];
+    "application/fdf" = [ "sioyek.desktop" ];
+    "application/xpdf" = [ "sioyek.desktop" ];
+    "application/pdx" = [ "sioyek.desktop" ];
   };
 
 }

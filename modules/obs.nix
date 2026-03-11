@@ -4,7 +4,7 @@
     enable = true;
     package = (
       pkgs.obs-studio.override {
-      cudaSupport = true;
+        cudaSupport = true;
       }
     );
     plugins = with pkgs.obs-studio-plugins; [

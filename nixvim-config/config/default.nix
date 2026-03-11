@@ -1,6 +1,6 @@
 {
   # Import all your configuration modules here
-  imports = [ 
+  imports = [
     ./cmp.nix
     ./extra_plugins.nix
     ./keymap.nix
@@ -11,5 +11,5 @@
     ./ui_plugins.nix
     ./user_commands.nix
     # ./vimtex.nix
-	];
+  ];
 }

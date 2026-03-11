@@ -18,13 +18,13 @@
         };
 
         lspBuf = {
-            gd = "definition";
-            gD = "references";
-            gt = "type_definition";
-            gi = "implementation";
-            H = "hover";
-            "<F2>" = "rename";
-          };
+          gd = "definition";
+          gD = "references";
+          gt = "type_definition";
+          gi = "implementation";
+          H = "hover";
+          "<F2>" = "rename";
+        };
       };
 
       servers = {
@@ -47,37 +47,36 @@
       };
     };
 
-  treesitter = {
-    enable = true;
+    treesitter = {
+      enable = true;
 
-    settings = {
-      highlight = {
-        enable = true;
-        additional_vim_regex_highlighting = true;
-        disable = [
+      settings = {
+        highlight = {
+          enable = true;
+          additional_vim_regex_highlighting = true;
+          disable = [
+            "latex"
+          ];
+        };
+        auto_install = false;
+        ensure_installed = [
+          "python"
+          "comment"
+          "json"
           "latex"
+          "markdown"
+          "regex"
+          "yaml"
+          "html"
+          "toml"
+          "nix"
+          "julia"
+          "bibtex"
+          "vim"
+          "c"
         ];
       };
-      auto_install = false;
-      ensure_installed = [
-        "python"
-        "comment"
-        "json"
-        "latex"
-        "markdown"
-        "regex"
-        "yaml"
-        "html"
-        "toml"
-        "nix"
-        "julia"
-        "bibtex"
-        "vim"
-        "c"
-      ];
-    };
 
     };
   };
 }
-

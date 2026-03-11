@@ -2,135 +2,134 @@
 
 {
   environment.systemPackages = with pkgs; [
-  # version control
-  git
-  git-lfs
-  stow
+    # version control
+    git
+    git-lfs
+    stow
 
-  # social
-  discord
-  teams-for-linux
-  signal-desktop
-  telegram-desktop
-  element-desktop
-  thunderbird
-  slack
-  dunst
+    # social
+    discord
+    teams-for-linux
+    signal-desktop
+    telegram-desktop
+    element-desktop
+    thunderbird
+    slack
+    dunst
 
-  # productivity
-  kitty
-  obsidian
-  mako
-  anki-bin
-  presenterm
-  libreoffice
-  starship
+    # productivity
+    kitty
+    obsidian
+    mako
+    anki-bin
+    presenterm
+    libreoffice
+    starship
 
-  
-  # compression 
-  zip
-  zstd
+    # compression
+    zip
+    zstd
 
-  # utilities
-  htop
-  wget
-  curl
-  unzip
-  grim
-  slurp
-  busybox
-  fzf
-  tealdeer
-  zoxide
-  ripgrep
-  wl-clipboard
-  cliphist
-  libsecret
-  ffmpeg
-  graphviz
-  tokei
-  nix-index
-  localsend
-  fd
-  vimPlugins.kitty-scrollback-nvim
+    # utilities
+    htop
+    wget
+    curl
+    unzip
+    grim
+    slurp
+    busybox
+    fzf
+    tealdeer
+    zoxide
+    ripgrep
+    wl-clipboard
+    cliphist
+    libsecret
+    ffmpeg
+    graphviz
+    tokei
+    nix-index
+    nixfmt
+    localsend
+    fd
+    vimPlugins.kitty-scrollback-nvim
 
-  # framework specific
-  linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
-  
-  # text editing
-  vscode
-  vim
-  inputs.nixvim.packages."${stdenv.hostPlatform.system}".default
-  typst
-  pandoc
-  zotero
-  mermaid-cli
-  
+    # framework specific
+    linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
 
-  # development
-  julia-bin
-  python3
-  poetry
-  gcc
-  libgcc
-  gnumake
-  cmake
-  extra-cmake-modules
-  universal-ctags
-  libz
-  stdenv.cc.cc.lib
-  swig
-  tree-sitter
-  nodejs
-  pre-commit
+    # text editing
+    vscode
+    vim
+    inputs.nixvim.packages."${stdenv.hostPlatform.system}".default
+    typst
+    pandoc
+    zotero
+    mermaid-cli
 
-  # deps for PyQt6
-  libxkbcommon
-  libX11
-  fontconfig
-  glib
-  freetype
-  dbus
-  xcb-util-cursor
-  wayland
+    # development
+    julia-bin
+    python3
+    poetry
+    gcc
+    libgcc
+    gnumake
+    cmake
+    extra-cmake-modules
+    universal-ctags
+    libz
+    stdenv.cc.cc.lib
+    swig
+    tree-sitter
+    nodejs
+    pre-commit
 
-  # games
-  crawl
-  vimgolf
-  
-  # browsing
-  fuzzel
+    # deps for PyQt6
+    libxkbcommon
+    libX11
+    fontconfig
+    glib
+    freetype
+    dbus
+    xcb-util-cursor
+    wayland
 
-  # networking
-  wireguard-tools
-  wireshark
-  tshark
-  networkmanagerapplet
-  networkmanager-sstp
-  ppp
-  eduvpn-client
+    # games
+    crawl
+    vimgolf
 
-  # media
-  v4l-utils
-  mpv
-  brightnessctl
-  pavucontrol
-  muffon
-  ddcutil
+    # browsing
+    fuzzel
 
-  # ui
-  nwg-look
-  fira-code
-  fira-code-symbols
+    # networking
+    wireguard-tools
+    wireshark
+    tshark
+    networkmanagerapplet
+    networkmanager-sstp
+    ppp
+    eduvpn-client
 
-  # authentication
-  libu2f-host
-  libu2f-server
-  hyprpolkitagent
-  keyutils
-  bitwarden-desktop
-  bitwarden-cli
-  tuigreet
+    # media
+    v4l-utils
+    mpv
+    brightnessctl
+    pavucontrol
+    muffon
+    ddcutil
+
+    # ui
+    nwg-look
+    fira-code
+    fira-code-symbols
+
+    # authentication
+    libu2f-host
+    libu2f-server
+    hyprpolkitagent
+    keyutils
+    bitwarden-desktop
+    bitwarden-cli
+    tuigreet
 
   ];
 

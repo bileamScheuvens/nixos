@@ -58,7 +58,10 @@
     enable = true;
     wlr.enable = false;
     xdgOpenUsePortal = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+    ];
   };
 
   # Configure keymap in X11
@@ -94,10 +97,16 @@
   users.users.bileam = {
     isNormalUser = true;
     description = "Bileam Scheuvens";
-    extraGroups = [ "networkmanager" "wheel" "i2c" "video" "adbusers" "docker" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "i2c"
+      "video"
+      "adbusers"
+      "docker"
+    ];
   };
   security.sudo.wheelNeedsPassword = false;
-
 
   # Install firefox.
   programs.firefox.enable = true;
@@ -108,7 +117,6 @@
     pinentryPackage = pkgs.pinentry-tty;
     enableSSHSupport = true;
   };
-
 
   # enable docker
   virtualisation.docker.enable = true;
@@ -130,12 +138,15 @@
     trusted-public-keys = [
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
-       "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
+      "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
     ];
   };
 
   # Enable Flakes and new nix CLI
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

@@ -1,18 +1,22 @@
 {
-  ###### COLORSCHEME ###### 
+  ###### COLORSCHEME ######
   colorschemes.catppuccin = {
     enable = true;
     settings = {
       flavour = "mocha";
       custom_highlights = {
-        LineNr = { fg = "#888888"; };
-        CursorLineNr = { fg = "#ffffff"; bold = true; };
+        LineNr = {
+          fg = "#888888";
+        };
+        CursorLineNr = {
+          fg = "#ffffff";
+          bold = true;
+        };
       };
     };
-   };
-  
+  };
 
-  ###### UI COMPONENTS ###### 
+  ###### UI COMPONENTS ######
   # views / previews
   plugins.markdown-preview.enable = true;
   plugins.typst-preview.enable = true;
@@ -23,14 +27,16 @@
     enable = true;
     settings = {
       window.position = "right";
-      event_handlers = [{
-        event = "neo_tree_buffer_enter";
-        handler.__raw = ''
-        function(arg)
-          vim.cmd [[ setlocal relativenumber ]]
-        end
-        '';
-        }];
+      event_handlers = [
+        {
+          event = "neo_tree_buffer_enter";
+          handler.__raw = ''
+            function(arg)
+              vim.cmd [[ setlocal relativenumber ]]
+            end
+          '';
+        }
+      ];
     };
   };
 

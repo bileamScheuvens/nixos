@@ -5,20 +5,20 @@
     enable = true;
     package = inputs.niri-flake.packages.x86_64-linux.niri-unstable;
     settings = {
-      binds = 
+      binds =
         let
           mod = "Super";
         in
         {
           # navigation
-          "${mod}+h".action.focus-column-or-monitor-left = {};
-          "${mod}+j".action.focus-window-down = {};
-          "${mod}+k".action.focus-window-up = {};
-          "${mod}+l".action.focus-column-or-monitor-right = {};
-          "${mod}+Shift+h".action.move-column-left-or-to-monitor-left = {};
-          "${mod}+Shift+j".action.move-column-to-monitor-down = {};
-          "${mod}+Shift+k".action.move-column-to-monitor-up = {};
-          "${mod}+Shift+l".action.move-column-right-or-to-monitor-right = {};
+          "${mod}+h".action.focus-column-or-monitor-left = { };
+          "${mod}+j".action.focus-window-down = { };
+          "${mod}+k".action.focus-window-up = { };
+          "${mod}+l".action.focus-column-or-monitor-right = { };
+          "${mod}+Shift+h".action.move-column-left-or-to-monitor-left = { };
+          "${mod}+Shift+j".action.move-column-to-monitor-down = { };
+          "${mod}+Shift+k".action.move-column-to-monitor-up = { };
+          "${mod}+Shift+l".action.move-column-right-or-to-monitor-right = { };
           # workspace navigation
           "${mod}+1".action.focus-workspace = 1;
           "${mod}+2".action.focus-workspace = 2;
@@ -40,7 +40,7 @@
           "${mod}+Shift+9".action.move-window-to-workspace = 9;
           # spawn applications
           "${mod}+Q".action.spawn = "kitty";
-          "${mod}+C".action.close-window = {};
+          "${mod}+C".action.close-window = { };
           "${mod}+O".action.spawn = "fuzzel -w 100 -l 20";
           "${mod}+F".action.spawn = "qutebrowser";
           "${mod}+E".action.spawn = "element-desktop --password-store=gnome-libsecret";
@@ -49,7 +49,7 @@
           "Print".action.spawn = "screenshot_region";
           "Shift+Print".action.spawn = "screenshot";
         };
-      spawn-at-startup = [ { command = ["waybar"]; }];
+      spawn-at-startup = [ { command = [ "waybar" ]; } ];
     };
   };
 

@@ -1,23 +1,29 @@
 {
-  opts.completeopt = ["menu" "menuone" "noselect"];
+  opts.completeopt = [
+    "menu"
+    "menuone"
+    "noselect"
+  ];
 
   plugins = {
     nvim-autopairs = {
       enable = true;
       settings = {
-        disable_filetype = ["TelescopePrompt" "vim"];
+        disable_filetype = [
+          "TelescopePrompt"
+          "vim"
+        ];
       };
     };
-    luasnip= {
+    luasnip = {
       enable = true;
       fromLua = [
-      {
-        lazyLoad = true;
-        paths = ./snippets;
-      }
+        {
+          lazyLoad = true;
+          paths = ./snippets;
+        }
       ];
     };
-
 
     lspkind = {
       enable = true;
@@ -52,9 +58,9 @@
         };
 
         sources = [
-          {name = "path";}
-          {name = "nvim_lsp";}
-          {name = "luasnip";}
+          { name = "path"; }
+          { name = "nvim_lsp"; }
+          { name = "luasnip"; }
           {
             name = "buffer";
             # Words from other open buffers can also be suggested.
@@ -66,4 +72,3 @@
     };
   };
 }
-

@@ -1,5 +1,8 @@
 {
   plugins = {
+    # sane defaults
+    lsp-format.enable = true;
+
     nix.enable = true;
     fidget.enable = true;
     lsp = {
@@ -43,8 +46,6 @@
         nixd.enable = true;
       };
     };
-    # sane defaults
-    lsp-format.enable = true;
 
   treesitter = {
     enable = true;

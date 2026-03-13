@@ -30,7 +30,7 @@
       servers = {
         lua_ls.enable = true;
         ruff.enable = true;
-        pyright.enable = true;
+        ty.enable = true;
         tinymist = {
           enable = true;
           settings.formatterMode = "typstyle";

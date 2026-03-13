@@ -5,8 +5,7 @@
   };
 
   keymaps = [
-
-    # trigger formatting
+    # open terminal
     {
       mode = "n";
       key = "<leader>t";
@@ -86,6 +85,15 @@
       mode = "n";
       key = "yp";
       action = "<cmd>let @+ = expand(\"%:p\")<CR>";
+    }
+    # toggle type hints
+    {
+      mode = "n";
+      key = "<leader>h";
+      action.__raw = ''
+        function() 
+           vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) 
+        end '';
     }
 
     # obsidian new note and insert template

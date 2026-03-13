@@ -1,5 +1,5 @@
 {
-  plugins.conjure.enable = true;
+  # plugins.conjure.enable = true;
   plugins.obsidian = {
     enable = false;
     settings = {

@@ -30,16 +30,10 @@
       servers = {
         lua_ls.enable = true;
         ruff.enable = true;
-        pylsp = {
-          enable = true;
-          settings.plugins = {
-          };
-        };
-        # julials.enable = true;
+        pyright.enable = true;
         tinymist = {
           enable = true;
           settings.formatterMode = "typstyle";
-
         };
         texlab.enable = true;
         clangd.enable = true;

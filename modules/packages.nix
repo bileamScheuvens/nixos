@@ -25,6 +25,7 @@
     presenterm
     libreoffice
     starship
+    marp-cli
 
     # compression
     zip

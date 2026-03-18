@@ -35,7 +35,7 @@
       # unmap ctrl w
       noop = "<C-w>";
 
-      fit_to_page_width = "r";
+      fit_to_page_smart = "r";
       zoom_in = "+";
       zoom_out = "-";
 

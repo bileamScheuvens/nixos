@@ -27,8 +27,8 @@
 
 
     # ignore certain endings for nvim
-    complete -f -X "*.@(lock|bib|pdf|png|jpg)" nvim
-    complete -f -X "*.@(lock|bib|pdf|png|jpg)" vi
+    complete -f -X "*.@(lock|html|pdf|png|jpg)" nvim
+    complete -f -X "*.@(lock|html|pdf|png|jpg)" vi
 
     # ctrl+backspace to delete word
     bind '"\C-H": backward-kill-word'

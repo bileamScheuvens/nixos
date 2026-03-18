@@ -26,6 +26,7 @@
   plugins.neo-tree = {
     enable = true;
     settings = {
+      filesystem.follow_current_file.enabled = true;
       window.position = "right";
       event_handlers = [
         {

@@ -5,6 +5,7 @@
     # version control
     git
     git-lfs
+    gh
     stow
 
     # social
@@ -80,7 +81,6 @@
     libz
     stdenv.cc.cc.lib
     swig
-    tree-sitter
     nodejs
     pre-commit
 

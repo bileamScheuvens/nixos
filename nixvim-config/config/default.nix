@@ -1,4 +1,8 @@
+{ pkgs, ... }:
 {
+  extraPackages = with pkgs; [
+    tree-sitter
+  ];
   # Import all your configuration modules here
   imports = [
     ./cmp.nix

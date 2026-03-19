@@ -46,11 +46,12 @@
   '';
 
   systemd.services.NetworkManager-wait-online.enable = false;
-  environment.variables = rec {
+  environment.variables = {
     EDITOR = "nvim";
     SYSTEM_EDITOR = "nvim";
     VISUAL = "nvim";
     QT_QPA_PLATFORM = "wayland";
+    EGL_PLATFORM = "wayland";
     ANKI_WAYLAND = 1;
   };
   # fingerprint sensor. Disabled as it causes massive login lag for some reason

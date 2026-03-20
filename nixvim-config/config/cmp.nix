@@ -57,9 +57,12 @@
             };
           };
         };
-        completion.documentation = {
-          auto_show = true;
-          auto_show_delay_ms = 500;
+        completion = {
+          list.selection.preselect = false;
+          documentation = {
+            auto_show = true;
+            auto_show_delay_ms = 500;
+          };
         };
         signature.enabled = true;
         term.enabled = true;

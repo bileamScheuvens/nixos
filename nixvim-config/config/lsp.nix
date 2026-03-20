@@ -7,7 +7,7 @@
     fidget.enable = true;
     lsp = {
       enable = true;
-      inlayHints = true;
+      inlayHints = false; # toggled
 
       keymaps = {
         silent = true;

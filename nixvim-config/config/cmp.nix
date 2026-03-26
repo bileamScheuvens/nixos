@@ -67,6 +67,8 @@
         signature.enabled = true;
         term.enabled = true;
         keymap = {
+          # disable, as it overshadows digraph
+          "<C-k>" = false;
           "<C-h>" = [
             "show"
             "show_documentation"

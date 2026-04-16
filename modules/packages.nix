@@ -55,6 +55,7 @@
     localsend
     fd
     vimPlugins.kitty-scrollback-nvim
+    jq
 
     # framework specific
     linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod

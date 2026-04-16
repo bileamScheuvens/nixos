@@ -36,6 +36,7 @@
           ./modules/battery.nix
           ./modules/boot.nix
           ./modules/hyprland.nix
+          ./modules/package_overrides.nix
           ./modules/packages.nix
           ./modules/vpn.nix
           ./modules/keyboard.nix

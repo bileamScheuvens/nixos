@@ -18,10 +18,10 @@
       toggle_dark_mode = "td";
       toggle_custom_color = "tc";
 
-      move_left = "h";
-      move_down = "j";
-      move_up = "k";
-      move_right = "l";
+      move_left_smooth = "h";
+      move_down_smooth = "j";
+      move_up_smooth = "k";
+      move_right_smooth = "l";
       goto_beginning = "go";
       goto_end = "G";
       goto_definition = "gd";

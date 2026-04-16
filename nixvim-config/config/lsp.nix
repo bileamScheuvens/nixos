@@ -30,6 +30,7 @@
       servers = {
         lua_ls.enable = true;
         ruff.enable = true;
+        # rust.enable = true;
         ty.enable = true;
         tinymist = {
           enable = true;
@@ -38,6 +39,7 @@
         texlab.enable = true;
         clangd.enable = true;
         nixd.enable = true;
+        yamlls.enable = true;
       };
     };
 

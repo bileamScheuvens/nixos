@@ -45,15 +45,9 @@
 
     treesitter = {
       enable = true;
+      highlight.disable = true;
 
       settings = {
-        highlight = {
-          enable = true;
-          additional_vim_regex_highlighting = true;
-          disable = [
-            "latex"
-          ];
-        };
         auto_install = false;
         ensure_installed = [
           "python"

@@ -55,6 +55,7 @@
           # import modules
           ./modules/bash.nix
           ./modules/boot.nix
+          ./modules/package_overrides.nix
           ./modules/packages.nix
           ./modules/vpn.nix
           ./modules/nvidia.nix

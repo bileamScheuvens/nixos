@@ -27,6 +27,8 @@
     libreoffice
     starship
     marp-cli
+    khal
+    vim-hypr-nav
 
     # compression
     zip
@@ -68,6 +70,7 @@
     pandoc
     zotero
     mermaid-cli
+    texliveFull
 
     # development
     julia-bin

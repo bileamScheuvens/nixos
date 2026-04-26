@@ -5,7 +5,7 @@
     texlivePackage = null;
 
     settings = {
-      view_method = "zathura";
+      view_method = "sioyek";
 
       quickfix_enabled = true;
       quickfix_open_on_warning = false;
@@ -34,14 +34,6 @@
       };
     };
   };
-
-  files."after/ftplugin/tex.lua".keymaps = [
-    {
-      mode = "n";
-      key = "m";
-      action = ":VimtexView<cr>";
-    }
-  ];
 
   autoCmd = [
     {

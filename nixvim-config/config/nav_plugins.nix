@@ -130,4 +130,6 @@
     settings.surround_enabled = 1;
   };
 
+  plugins.vim-hypr-nav.enable = true;
+
 }

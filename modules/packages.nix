@@ -58,6 +58,8 @@
     fd
     vimPlugins.kitty-scrollback-nvim
     jq
+    nurl
+    comma
 
     # framework specific
     linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod

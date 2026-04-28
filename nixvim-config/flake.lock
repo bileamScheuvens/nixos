@@ -93,8 +93,8 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1777221155,
-        "narHash": "sha256-ggiaJ4jAbG0QpCfE4LrG55eoUskGHGFviF+KkbEOk90=",
+        "lastModified": 1777228607,
+        "narHash": "sha256-rXblLpL12wNEUw46oktK+3lacdf30CV9LF4rQCNS3cI=",
         "path": "/home/bileam/code/nixvim",
         "type": "path"
       },

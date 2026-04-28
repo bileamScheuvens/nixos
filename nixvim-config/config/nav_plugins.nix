@@ -130,5 +130,6 @@
     settings.surround_enabled = 1;
   };
 
+  # using patched version in extraplugins
   # plugins.vim-hypr-nav.enable = true;
 }

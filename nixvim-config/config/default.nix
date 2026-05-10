@@ -5,7 +5,6 @@
   ];
   # Import all your configuration modules here
   imports = [
-    ./plugin_overrides.nix
     ./cmp.nix
     ./extra_plugins.nix
     ./keymap.nix

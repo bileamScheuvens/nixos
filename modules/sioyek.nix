@@ -12,7 +12,7 @@
       '';
     };
     config = {
-
+      should_launch_new_window = "1";
     };
     bindings = {
       toggle_dark_mode = "td";
@@ -25,11 +25,14 @@
       goto_beginning = "go";
       goto_end = "G";
       goto_definition = "gd";
+      goto_toc = "T";
       screen_down = "<C-d>";
       screen_up = "<C-u>";
       prev_state = "<C-o>";
       next_state = "<C-i>";
 
+      # quit window and all
+      close_window = "q";
       quit = "<C-q>";
 
       # unmap ctrl w

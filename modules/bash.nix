@@ -10,6 +10,7 @@
 
     alias icat="kitten icat"
     alias vi="nvim"
+    alias y="yazi"
     alias pvi="poetry run nvim"
     alias brightness="ddcutil setvcp 10"
     alias marpwatch="marp --theme ~/themes/rosepine/css/rose-pine.css --html --watch"

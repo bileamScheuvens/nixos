@@ -2,6 +2,9 @@
 {
   fonts = {
     fontconfig.enable = true;
-    packages = [ pkgs.font-awesome ];
+    packages = with pkgs; [
+      font-awesome
+      libertinus
+    ];
   };
 }

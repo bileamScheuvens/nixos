@@ -60,6 +60,7 @@
     jq
     nurl
     comma
+    trash-cli
 
     # framework specific
     linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
@@ -90,16 +91,6 @@
     nodejs
     pre-commit
 
-    # deps for PyQt6
-    libxkbcommon
-    libX11
-    fontconfig
-    glib
-    freetype
-    dbus
-    xcb-util-cursor
-    wayland
-
     # games
     crawl
     vimgolf
@@ -123,6 +114,11 @@
     pavucontrol
     muffon
     ddcutil
+    python314Packages.pygments
+
+    # creative
+    affinity-v3
+    inkscape
 
     # ui
     nwg-look

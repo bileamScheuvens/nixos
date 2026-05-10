@@ -11,6 +11,7 @@
       url = "path:nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    affinity-nix.url = "github:mrshmllow/affinity-nix";
     # niri-flake.url = "github:sodiboo/niri-flake";
   };
 
@@ -20,6 +21,7 @@
       nixpkgs,
       home-manager,
       nixvim,
+      affinity-nix,
       ...
     }@inputs:
     {
@@ -42,6 +44,7 @@
           ./modules/keyboard.nix
           ./modules/qutebrowser.nix
           ./modules/fonts.nix
+          ./modules/yazi.nix
         ];
       };
       nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {
@@ -64,6 +67,7 @@
           ./modules/hyprland.nix
           ./modules/fonts.nix
           ./modules/obs.nix
+          ./modules/yazi.nix
         ];
       };
     };

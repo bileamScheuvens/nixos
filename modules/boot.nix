@@ -51,6 +51,7 @@
     SYSTEM_EDITOR = "nvim";
     VISUAL = "nvim";
     QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORMTHEME = "xdgdesktopportal";
     EGL_PLATFORM = "wayland";
     ANKI_WAYLAND = 1;
   };

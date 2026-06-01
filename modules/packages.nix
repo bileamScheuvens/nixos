@@ -1,4 +1,8 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -10,24 +14,24 @@
 
     # social
     discord
-    teams-for-linux
-    signal-desktop
-    telegram-desktop
-    element-desktop
-    thunderbird
-    slack
     dunst
+    element-desktop
+    signal-desktop
+    slack
+    teams-for-linux
+    telegram-desktop
+    thunderbird
 
     # productivity
-    kitty
-    obsidian
-    mako
     anki-bin
-    presenterm
-    libreoffice
-    starship
-    marp-cli
     khal
+    kitty
+    libreoffice
+    mako
+    marp-cli
+    obsidian
+    presenterm
+    starship
     vim-hypr-nav
 
     # compression
@@ -35,35 +39,34 @@
     zstd
 
     # utilities
-    htop
-    wget
-    curl
-    unzip
-    grim
-    slurp
+    bibtool
     busybox
-    fzf
-    tealdeer
-    zoxide
-    ripgrep
-    wl-clipboard
     cliphist
-    libsecret
+    comma
+    curl
+    fd
     ffmpeg
+    fzf
     graphviz
-    tokei
+    grim
+    htop
+    inputs.doi2bib.packages."${stdenv.hostPlatform.system}".native
+    jq
+    libsecret
+    localsend
     nix-index
     nixfmt
-    localsend
-    fd
-    vimPlugins.kitty-scrollback-nvim
-    jq
     nurl
-    comma
+    ripgrep
+    slurp
+    tealdeer
+    tokei
     trash-cli
-
-    # framework specific
-    linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
+    unzip
+    vimPlugins.kitty-scrollback-nvim
+    wget
+    wl-clipboard
+    zoxide
 
     # text editing
     vscode
@@ -76,20 +79,20 @@
     texliveFull
 
     # development
-    julia-bin
-    python3
-    poetry
-    gcc
-    libgcc
-    gnumake
     cmake
     extra-cmake-modules
-    universal-ctags
+    gcc
+    gnumake
+    julia-bin
+    libgcc
     libz
+    nodejs
+    poetry
+    pre-commit
+    python3
     stdenv.cc.cc.lib
     swig
-    nodejs
-    pre-commit
+    universal-ctags
 
     # games
     crawl
@@ -108,13 +111,14 @@
     eduvpn-client
 
     # media
-    v4l-utils
-    mpv
     brightnessctl
-    pavucontrol
-    muffon
     ddcutil
+    mpv
+    muffon
+    pavucontrol
     python314Packages.pygments
+    termusic
+    v4l-utils
 
     # creative
     affinity-v3
@@ -126,14 +130,13 @@
     fira-code-symbols
 
     # authentication
-    libu2f-host
-    libu2f-server
+    bitwarden-cli
+    bitwarden-desktop
     hyprpolkitagent
     keyutils
-    bitwarden-desktop
-    bitwarden-cli
+    libu2f-host
+    libu2f-server
     tuigreet
-
   ];
 
   programs.steam.enable = true;

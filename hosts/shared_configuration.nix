@@ -74,6 +74,7 @@
     };
 
   };
+  environment.sessionVariables.GTK_USE_PORTAL = "1";
 
   # Configure keymap in X11
   services.xserver.xkb = {

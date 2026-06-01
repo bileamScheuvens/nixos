@@ -11,6 +11,9 @@
       url = "path:nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    doi2bib = {
+      url = "github:mseri/doi2bib";
+    };
     affinity-nix.url = "github:mrshmllow/affinity-nix";
     # niri-flake.url = "github:sodiboo/niri-flake";
   };
@@ -21,6 +24,7 @@
       nixpkgs,
       home-manager,
       nixvim,
+      doi2bib,
       affinity-nix,
       ...
     }@inputs:
@@ -45,6 +49,13 @@
           ./modules/qutebrowser.nix
           ./modules/fonts.nix
           ./modules/yazi.nix
+
+          # framework specific
+          {
+            environment.systemPackages = [
+              nixpkgs.linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
+            ];
+          }
         ];
       };
       nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {

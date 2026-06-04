@@ -80,7 +80,6 @@
 
     # development
     cmake
-    extra-cmake-modules
     gcc
     gnumake
     julia-bin
@@ -95,7 +94,7 @@
     universal-ctags
 
     # games
-    crawl
+    # crawl
     vimgolf
 
     # browsing
@@ -121,7 +120,7 @@
     v4l-utils
 
     # creative
-    affinity-v3
+    # affinity-v3
     inkscape
 
     # ui

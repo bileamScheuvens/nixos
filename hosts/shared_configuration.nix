@@ -57,23 +57,6 @@
   home-manager.extraSpecialArgs = { inherit inputs; };
   # environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
 
-  xdg = {
-    portal = {
-      enable = true;
-      wlr.enable = false;
-      xdgOpenUsePortal = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-hyprland
-        xdg-desktop-portal-gtk
-        xdg-desktop-portal-termfilechooser
-      ];
-
-      config.common = {
-        "org.freedesktop.impl.portal.FileChooser" = [ "termfilechooser" ];
-      };
-    };
-
-  };
   environment.sessionVariables.GTK_USE_PORTAL = "1";
 
   # Configure keymap in X11

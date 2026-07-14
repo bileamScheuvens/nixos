@@ -4,6 +4,49 @@
     enable = true;
 
     settings = {
+      yazi.opener = {
+        typst-compile = [
+          {
+            run = "typst compile %s";
+            block = true;
+            desc = "typst-compile";
+
+          }
+        ];
+        edit = [
+          {
+            run = "$EDITOR %s";
+            block = true;
+            desc = "edit";
+
+          }
+        ];
+        xdg_open = [
+          {
+            run = "xdg-open \"$@\"";
+            orphan = true;
+            desc = "xdg open";
+          }
+        ];
+      };
+      yazi.open = {
+        prepend_rules = [
+          {
+            url = "*.typ";
+            use = [
+              "edit"
+              "typst-compile"
+            ];
+          }
+          {
+            url = "*.html";
+            use = [
+              "xdg_open"
+              "edit"
+            ];
+          }
+        ];
+      };
       keymap.mgr.prepend_keymap = [
         {
           on = [
@@ -14,13 +57,12 @@
           desc = "go to top";
         }
         {
-          on = ["H"];
+          on = [ "H" ];
           run = "hidden toggle";
           desc = "toggle hidden";
-
         }
         {
-          on = ["d"];
+          on = [ "d" ];
           run = "remove --force";
           desc = "force delete";
 

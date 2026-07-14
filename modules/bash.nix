@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+  environment.etc."bash.bashrc".text = ''
+    source /etc/bashrc
+  '';
   environment.interactiveShellInit = ''
     eval "$(direnv hook bash)"
     eval "$(starship init bash)"

@@ -21,6 +21,8 @@
   plugins.markdown-preview.enable = true;
   plugins.typst-preview.enable = true;
   plugins.csvview.enable = true;
+  # diff line annotation
+  plugins.gitsigns.enable = true;
   # Neo-tree is a Neovim plugin to browse the file system
   # https://nix-community.github.io/nixvim/plugins/neo-tree/index.html?highlight=neo-tree#pluginsneo-treepackage
   plugins.neo-tree = {

@@ -11,6 +11,14 @@
     git-lfs
     gh
     stow
+    nextcloud-client
+
+    # nix utils
+    comma
+    nix-index
+    nix-init
+    nixfmt
+    nurl
 
     # social
     discord
@@ -42,7 +50,6 @@
     bibtool
     busybox
     cliphist
-    comma
     curl
     fd
     ffmpeg
@@ -54,9 +61,6 @@
     jq
     libsecret
     localsend
-    nix-index
-    nixfmt
-    nurl
     ripgrep
     slurp
     tealdeer
@@ -77,6 +81,7 @@
     zotero
     mermaid-cli
     texliveFull
+    xdg-desktop-portal-termfilechooser
 
     # development
     cmake

@@ -34,7 +34,11 @@
         ty.enable = true;
         tinymist = {
           enable = true;
-          settings.formatterMode = "typstyle";
+          settings = {
+            formatterMode = "typstyle";
+            projectResolution = "lockDatabase";
+            exportPdf = "onSave";
+          };
         };
         texlab.enable = true;
         clangd.enable = true;

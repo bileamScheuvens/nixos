@@ -3,7 +3,6 @@
 {
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "quiet" ];
-  services.fwupd.enable = true;
 
   # bluetooth
   hardware.bluetooth = {

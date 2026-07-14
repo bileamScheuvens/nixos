@@ -119,6 +119,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # allow insecure electron
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10"
+  ];
+
   # direnv for cached shells
   programs.direnv.enable = true;
 

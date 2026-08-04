@@ -13,6 +13,10 @@
     };
     config = {
       should_launch_new_window = "1";
+      search_url_s = "https://scholar.google.com/scholar?q=";
+      search_url_g = "https://www.google.com/search?q=";
+      search_url_a = "https://arxiv.org/search/?searchtype=all&abstracts=show&size=200&query=";
+      middle_click_search_engine = "g";
     };
     bindings = {
       toggle_dark_mode = "td";

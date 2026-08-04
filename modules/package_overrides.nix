@@ -2,6 +2,7 @@
 {
   nixpkgs.overlays = [
     (new: old: {
+      ferium = new.callPackage ../packages/ferium { };
       crawl = new.callPackage ../packages/crawl { };
       vim-hypr-nav = new.callPackage ../packages/vim-hypr-nav { };
     })

@@ -10,6 +10,12 @@
     eval "$(zoxide init bash)"
 
     export PATH=~/scripts/:$PATH
+    export TODO_DIR=~/todo/
+    export TODO_FILE=~/todo/todo.txt
+    export DONE_FILE=~/todo/done.txt
+
+    export HISTSIZE=2500
+    export HISTFILESIZE=2500
 
     alias icat="kitten icat"
     alias vi="nvim"
@@ -45,5 +51,6 @@
   environment.variables = {
     KITTY_SCROLLBACK_NVIM = "${pkgs.vimPlugins.kitty-scrollback-nvim}";
     KITTY_SCROLLBACK_VISUAL = "${pkgs.vimPlugins.kitty-scrollback-nvim}/scripts/edit_command_line.bash";
+
   };
 }

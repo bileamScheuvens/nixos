@@ -57,6 +57,11 @@
           desc = "go to top";
         }
         {
+          on = [ "<Esc>" ];
+          run = "close";
+          desc = "close";
+        }
+        {
           on = [ "H" ];
           run = "hidden toggle";
           desc = "toggle hidden";

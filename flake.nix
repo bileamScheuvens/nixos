@@ -79,6 +79,7 @@
           ./modules/fonts.nix
           # ./modules/obs.nix
           ./modules/yazi.nix
+          ./modules/ollama.nix
         ];
       };
     };

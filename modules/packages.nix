@@ -41,6 +41,7 @@
     presenterm
     starship
     vim-hypr-nav
+    tuxedo
 
     # compression
     zip
@@ -101,6 +102,8 @@
     # games
     # crawl
     vimgolf
+    ferium
+    prismlauncher
 
     # browsing
     fuzzel

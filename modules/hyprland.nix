@@ -10,10 +10,4 @@
     NIXOS_OZONE_WL = 1;
   };
 
-  fonts = {
-    fontconfig.enable = true;
-    packages = [
-      pkgs.font-awesome
-    ];
-  };
 }

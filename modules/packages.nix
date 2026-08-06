@@ -29,6 +29,7 @@
     teams-for-linux
     telegram-desktop
     thunderbird
+    fastmail-desktop
 
     # productivity
     anki-bin

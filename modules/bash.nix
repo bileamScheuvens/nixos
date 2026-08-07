@@ -26,9 +26,9 @@
     alias ..="cd .."
     alias ...="cd ../.."
 
-    alias screenshot="grim - | wl-copy && wl-paste > ~/Pictures/screenshots/screenshot-\$(date +%F_%T).png && dunstify 'Screenshot of whole screen taken' -t 1000"
+    alias screenshot="grim - | wl-copy && wl-paste > ~/Pictures/screenshots/screenshot-\$(date +%F_%T).png && notify-send 'Screenshot of whole screen taken' -t 1000"
 
-    alias screenshot_region="grim -g \"\$(slurp)\" - | wl-copy && wl-paste > ~/Pictures/screenshots/screenshot-\$(date +%F_%T).png && dunstify 'Screenshot of the region taken' -t 1000"
+    alias screenshot_region="grim -g \"\$(slurp)\" - | wl-copy && wl-paste > ~/Pictures/screenshots/screenshot-\$(date +%F_%T).png && notify-send 'Screenshot of the region taken' -t 1000"
 
     alias direnv_init="echo 'use flake' >> .envrc && direnv allow"
 

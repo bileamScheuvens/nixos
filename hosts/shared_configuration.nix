@@ -12,11 +12,10 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  # allow localsend & flask & server
+  # allow localsend & flask
   networking.firewall.allowedTCPPorts = [
     53317
     5000
-    25565
   ];
   networking.firewall.allowedUDPPorts = [ 53317 ];
   # allow eduvpn

@@ -13,6 +13,9 @@
 
   # set hostname
   networking.hostName = "Athenai"; # Define your hostname.
+  networking.firewall.allowedTCPPorts = [
+    25565
+  ];
 
   # Cryptsetup
   boot.initrd.systemd.enable = true;
@@ -29,5 +32,10 @@
     enable = true;
     cpuFreqGovernor = "conservative";
   };
+
+  environment.systemPackages = with pkgs; [
+    ferium
+    prismlauncher
+  ];
 
 }

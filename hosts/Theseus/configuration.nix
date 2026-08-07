@@ -15,4 +15,8 @@
   # set hostname
   networking.hostName = "Theseus"; # Define your hostname.
 
+  environment.systemPackages = with pkgs; [
+    linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
+  ];
+
 }

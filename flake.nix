@@ -49,13 +49,6 @@
           ./modules/qutebrowser.nix
           ./modules/fonts.nix
           ./modules/yazi.nix
-
-          # framework specific
-          {
-            environment.systemPackages = [
-              nixpkgs.linuxKernel.packages.linux_xanmod_latest.framework-laptop-kmod
-            ];
-          }
         ];
       };
       nixosConfigurations.Athenai = nixpkgs.lib.nixosSystem {

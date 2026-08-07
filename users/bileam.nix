@@ -6,6 +6,8 @@
     ../modules/sioyek.nix
   ];
 
+  services.mako.enable = true;
+
   xdg = {
     configFile = {
       "xdg-desktop-portal-termfilechooser/config" = {

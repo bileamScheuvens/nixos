@@ -22,27 +22,26 @@
 
     # social
     discord
-    dunst
     element-desktop
     signal-desktop
     slack
-    teams-for-linux
+    # teams-for-linux
     telegram-desktop
     thunderbird
     fastmail-desktop
 
     # productivity
-    anki-bin
-    khal
+    # anki-bin
+    # khal
     kitty
     libreoffice
-    mako
     marp-cli
-    obsidian
+    # obsidian
     presenterm
     starship
     vim-hypr-nav
     tuxedo
+    libnotify
 
     # compression
     zip
@@ -56,7 +55,7 @@
     fd
     ffmpeg
     fzf
-    graphviz
+    # graphviz
     grim
     htop
     inputs.doi2bib.packages."${stdenv.hostPlatform.system}".native
@@ -80,7 +79,7 @@
     inputs.nixvim.packages."${stdenv.hostPlatform.system}".default
     typst
     pandoc
-    zotero
+    # zotero
     mermaid-cli
     texliveFull
     xdg-desktop-portal-termfilechooser
@@ -103,8 +102,6 @@
     # games
     # crawl
     vimgolf
-    ferium
-    prismlauncher
 
     # browsing
     fuzzel
@@ -139,7 +136,7 @@
 
     # authentication
     bitwarden-cli
-    bitwarden-desktop
+    # bitwarden-desktop
     hyprpolkitagent
     keyutils
     libu2f-host

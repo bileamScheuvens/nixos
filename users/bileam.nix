@@ -6,7 +6,12 @@
     ../modules/sioyek.nix
   ];
 
-  services.mako.enable = true;
+  services.mako = {
+    enable = true;
+    settings = {
+      default-timeout = 2000;
+    };
+  };
 
   xdg = {
     configFile = {

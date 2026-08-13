@@ -100,7 +100,7 @@
     universal-ctags
 
     # games
-    # crawl
+    crawl
     vimgolf
 
     # browsing

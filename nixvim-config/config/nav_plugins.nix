@@ -132,4 +132,14 @@
 
   # using patched version in extraplugins
   # plugins.vim-hypr-nav.enable = true;
+
+  # repl support
+  plugins.vim-slime = {
+    enable = true;
+    settings = {
+      target = "kitty";
+      no_mappings = 1;
+
+    };
+  };
 }

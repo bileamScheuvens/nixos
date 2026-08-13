@@ -96,6 +96,26 @@
         end '';
     }
 
+    # slime keybinds
+    # visual selection
+    {
+      mode = "x";
+      key = "<leader>r";
+      action = "<cmd>SlimeSend<CR>";
+    }
+    # motion
+    {
+      mode = "n";
+      key = "<leader>r";
+      action = "<cmd>SlimeSend<CR>";
+    }
+    # file
+    {
+      mode = "n";
+      key = "<leader>rf";
+      action = "<cmd>%SlimeSend<CR>";
+    }
+
     # obsidian new note and insert template
     # {
     #   mode = "n";

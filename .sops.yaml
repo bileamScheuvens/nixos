@@ -1,0 +1,7 @@
+keys:
+  - &host_athenai age1h02kg8hqa0e0edr78l6awwqj9xk9gcaj7ldcnq7ag6km2hw6uvqq7uvgp7
+creation_rules:
+  - path_regex: secrets/secrets.yaml$
+    key_groups:
+      - age:
+          - *host_athenai

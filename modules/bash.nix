@@ -41,6 +41,9 @@
     complete -f -X "*.@(lock|html|pdf|png|jpg)" nvim
     complete -f -X "*.@(lock|html|pdf|png|jpg)" vi
 
+    # only complete pdf files for sioyek
+    complete -f -o plusdirs -X "!*.pdf" sioyek
+
     # ctrl+backspace to delete word
     bind '"\C-H": backward-kill-word'
 

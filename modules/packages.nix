@@ -43,7 +43,9 @@
     tuxedo
     libnotify
 
-    # compression
+    # compression & encryption
+    age
+    sops
     zip
     zstd
 
@@ -126,7 +128,7 @@
     v4l-utils
 
     # creative
-    # affinity-v3
+    affinity-v3
     inkscape
 
     # ui

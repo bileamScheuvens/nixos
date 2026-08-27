@@ -15,6 +15,10 @@
       url = "github:mseri/doi2bib";
     };
     affinity-nix.url = "github:mrshmllow/affinity-nix";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # niri-flake.url = "github:sodiboo/niri-flake";
   };
 
@@ -48,6 +52,7 @@
           ./modules/keyboard.nix
           ./modules/qutebrowser.nix
           ./modules/fonts.nix
+          ./modules/sops.nix
           ./modules/yazi.nix
         ];
       };
@@ -71,7 +76,9 @@
           ./modules/hyprland.nix
           ./modules/fonts.nix
           # ./modules/obs.nix
+          ./modules/sops.nix
           ./modules/yazi.nix
+          ./modules/wifi_relay.nix
           ./modules/ollama.nix
         ];
       };

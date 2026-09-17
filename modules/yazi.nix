@@ -3,8 +3,17 @@
   programs.yazi = {
     enable = true;
 
-    settings = {
-      yazi.opener = {
+    settings.yazi = {
+
+      # disable previews, slows down for pdf
+      plugin.prepend_previewers = [
+        {
+          mime = "application/pdf";
+          run = "noop";
+        }
+      ];
+
+      opener = {
         typst-compile = [
           {
             run = "typst compile %s";
@@ -29,7 +38,7 @@
           }
         ];
       };
-      yazi.open = {
+      open = {
         prepend_rules = [
           {
             url = "*.typ";

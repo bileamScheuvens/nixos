@@ -10,6 +10,7 @@
     eval "$(zoxide init bash)"
 
     export PATH=~/scripts/:$PATH
+    export TYPST_FONT_PATHS=~/fonts/
     export TODO_DIR=~/todo/
     export TODO_FILE=~/todo/todo.txt
     export DONE_FILE=~/todo/done.txt
@@ -19,7 +20,7 @@
 
     alias icat="kitten icat"
     alias vi="nvim"
-    alias y="yazi"
+
     alias pvi="poetry run nvim"
     alias brightness="ddcutil setvcp 10"
     alias marpwatch="marp --theme ~/themes/rosepine/css/rose-pine.css --html --watch"
@@ -34,6 +35,14 @@
 
     function poetry-install-fix() {
       poetry install --no-root && fix-python --venv $(poetry env info -p)
+    }
+
+    function y() {
+      local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+      command yazi "$@" --cwd-file="$tmp"
+      IFS= read -r -d "" cwd < "$tmp"
+      [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+      command rm -f -- "$tmp"
     }
 
 

@@ -128,7 +128,7 @@
     v4l-utils
 
     # creative
-    affinity-v3
+    # affinity-v3
     inkscape
 
     # ui
@@ -138,7 +138,7 @@
 
     # authentication
     bitwarden-cli
-    # bitwarden-desktop
+    bitwarden-desktop
     hyprpolkitagent
     keyutils
     libu2f-host

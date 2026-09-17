@@ -80,6 +80,38 @@
       key = "<leader>P";
       action = "\"+P";
     }
+    # diff mode keybinds
+    {
+      mode = "x";
+      key = "<leader>1";
+      action = "<cmd>'<,'>diffget LOCAL<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>1";
+      action = "<cmd>diffget LOCAL<CR>";
+    }
+    {
+      mode = "x";
+      key = "<leader>2";
+      action = "<cmd>'<,'>diffget BASE<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>2";
+      action = "<cmd>diffget BASE<CR>";
+    }
+    {
+      mode = "x";
+      key = "<leader>3";
+      action = "<cmd>'<,'>diffget REMOTE<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>3";
+      action = "<cmd>diffget REMOTE<CR>";
+    }
+
     # copy current file path to system clipboard
     {
       mode = "n";
@@ -101,13 +133,18 @@
     {
       mode = "x";
       key = "<leader>r";
-      action = "<cmd>SlimeSend<CR>";
+      action = "<Plug>SlimeRegionSend";
     }
     # motion
     {
       mode = "n";
       key = "<leader>r";
-      action = "<cmd>SlimeSend<CR>";
+      action = "<Plug>SlimeMotionSend";
+    }
+    {
+      mode = "n";
+      key = "<leader>rr";
+      action = "<Plug>SlimeLineSend";
     }
     # file
     {
@@ -133,4 +170,5 @@
     #   action = "<cmd>Obsidian template<CR>";
     # }
   ];
+
 }

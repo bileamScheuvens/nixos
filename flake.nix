@@ -20,6 +20,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # niri-flake.url = "github:sodiboo/niri-flake";
+    # mangobar = {
+    #   url = "github:mangowm/mangobar";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs =
@@ -45,7 +49,8 @@
           ./modules/bash.nix
           ./modules/battery.nix
           ./modules/boot.nix
-          ./modules/hyprland.nix
+          # ./modules/hyprland.nix
+          ./modules/mango.nix
           ./modules/package_overrides.nix
           ./modules/packages.nix
           ./modules/vpn.nix
@@ -73,7 +78,8 @@
           ./modules/nvidia.nix
           ./modules/keyboard.nix
           ./modules/qutebrowser.nix
-          ./modules/hyprland.nix
+          # ./modules/hyprland.nix
+          ./modules/mango.nix
           ./modules/fonts.nix
           # ./modules/obs.nix
           ./modules/sops.nix

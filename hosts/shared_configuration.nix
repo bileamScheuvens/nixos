@@ -42,15 +42,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = false;
 
-  # Enable the KDE Desktop Environment.
-  services.greetd = {
-    enable = true;
-    settings.default_session = {
-      command = "tuigreet --time --remember --cmd 'uwsm start hyprland-uwsm.desktop'";
-      user = "bileam";
-    };
-  };
-
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.users.bileam = ../users/bileam.nix;
@@ -75,6 +66,7 @@
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
+    wireplumber.enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;

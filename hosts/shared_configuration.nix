@@ -169,12 +169,12 @@
           id = "KZ4MOMI-WMH4T25-537ZFGZ-EJNQE5Q-4NNPCHS-7SAPHHI-XUTQOHZ-DS4H5AE";
         };
         "Theseus" = {
-          id = "BQJNJEN-3B2JNAN-HEA6FCG-M6GDSTI-7H4BL3E-77MTHAY-3VVNJUI-D5CLTQI";
+          id = "JCHYCFR-JA2QW64-V5N6IPY-T4WKW5E-HVJ75R3-IWIRXQF-FE34CZ3-GIY6UQT";
         };
       };
       folders = {
         "dspls" = {
-          path = "/home/bileam/code/dpsls";
+          path = "/home/bileam/code/dspls";
           devices = [
             "Athenai"
             "Theseus"

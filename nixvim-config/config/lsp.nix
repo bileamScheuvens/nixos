@@ -1,51 +1,59 @@
+{ lib, ... }:
 {
-  plugins = {
-    # sane defaults
-    lsp-format.enable = true;
-
-    nix.enable = true;
-    fidget.enable = true;
-    lsp = {
+  lsp = {
+    inlayHints = {
+      # managed by nixvim but toggled
       enable = true;
-      inlayHints = false; # toggled
-
-      keymaps = {
-        silent = true;
-        diagnostic = {
-          # Navigate in diagnostics
-          "<leader>k" = "goto_prev";
-          "<leader>j" = "goto_next";
-        };
-
-        lspBuf = {
-          gd = "definition";
-          gD = "references";
-          gt = "type_definition";
-          gi = "implementation";
-          H = "hover";
-          "<F2>" = "rename";
-        };
-      };
-
-      servers = {
-        lua_ls.enable = true;
-        ruff.enable = true;
-        # rust.enable = true;
-        ty.enable = true;
-        tinymist = {
-          enable = true;
-          settings = {
-            formatterMode = "typstyle";
-            projectResolution = "lockDatabase";
-            exportPdf = "onSave";
-          };
-        };
-        texlab.enable = true;
-        clangd.enable = true;
-        nixd.enable = true;
-        yamlls.enable = true;
-      };
+      activate = false;
     };
+
+    keymaps =
+      # frame stolen from @GaetanLepage
+      lib.mapAttrsToList
+        (
+          key: props:
+          {
+            inherit key;
+            options.silent = true;
+          }
+          // props
+        )
+        {
+          "<leader>k".action.__raw = "function() vim.diagnostic.jump({ count=-1, float=true }) end";
+          "<leader>j".action.__raw = "function() vim.diagnostic.jump({ count=1, float=true }) end";
+          gd.lspBufAction = "definition";
+          gD.lspBufAction = "references";
+          gt.lspBufAction = "type_definition";
+          gi.lspBufAction = "implementation";
+          H.lspBufAction = "hover";
+          "<F2>".lspBufAction = "rename";
+          "<leader>f".lspBufAction = "format";
+        };
+    servers = {
+      nixd.enable = true;
+      jdtls.enable = true;
+      lua_ls.enable = true;
+      ruff.enable = true;
+      rust.enable = true;
+      ty.enable = true;
+      tinymist = {
+        enable = true;
+        config.settings = {
+          formatterMode = "typstyle";
+          projectResolution = "lockDatabase";
+          exportPdf = "never"; # avoid memory leak until patched
+        };
+      };
+      texlab.enable = true;
+      clangd.enable = true;
+      yamlls.enable = true;
+    };
+  };
+  plugins = {
+    # formatting
+    lsp-format.enable = true;
+    # sane defaults
+    lspconfig.enable = true;
 
     treesitter = {
       enable = true;

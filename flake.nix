@@ -19,7 +19,6 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # niri-flake.url = "github:sodiboo/niri-flake";
     # mangobar = {
     #   url = "github:mangowm/mangobar";
     #   inputs.nixpkgs.follows = "nixpkgs";

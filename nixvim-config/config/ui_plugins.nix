@@ -17,6 +17,8 @@
   };
 
   ###### UI COMPONENTS ######
+  # lsp progress messages
+  plugins.fidget.enable = true;
   # views / previews
   plugins.markdown-preview.enable = true;
   plugins.typst-preview.enable = true;

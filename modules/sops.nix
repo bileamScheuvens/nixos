@@ -7,5 +7,8 @@
     defaultSopsFile = ../secrets/secrets.yaml;
     age.keyFile = "${config.users.users.bileam.home}/.config/sops/age/keys.txt";
     secrets.wifi_relay = { };
+    secrets.syncthing_pw = {
+      owner = "bileam";
+    };
   };
 }

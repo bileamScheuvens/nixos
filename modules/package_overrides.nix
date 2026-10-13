@@ -6,7 +6,7 @@
       crawl = final.callPackage ../packages/crawl { };
       discord = (final.callPackage ../packages/discord { }).discord;
       fastmail-desktop = final.callPackage ../packages/fastmail-desktop { };
-      vim-hypr-nav = final.callPackage ../packages/vim-hypr-nav { };
+      # vim-hypr-nav = final.callPackage ../packages/vim-hypr-nav { };
       waybar = prev.waybar.overrideAttrs (old: {
         src = pkgs.fetchFromGitHub {
           owner = "alexays";
@@ -17,7 +17,6 @@
         nativeBuildInputs = old.nativeBuildInputs ++ [ prev.cmake ];
         buildInputs = old.buildInputs ++ [
           prev.modemmanager
-          # final.libcava
         ];
         mesonFlags = old.mesonFlags ++ [ "-Dcava=disabled" ];
 

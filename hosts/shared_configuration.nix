@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 
 {
   # Bootloader.
@@ -88,6 +93,7 @@
     isNormalUser = true;
     description = "Bileam Scheuvens";
     extraGroups = [
+      "syncthing"
       "networkmanager"
       "wheel"
       "i2c"
@@ -116,7 +122,7 @@
 
   # allow insecure electron
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-39.8.10"
+    "NetworkManager-sstp-gnome-1.3.2"
   ];
 
   # direnv for cached shells
@@ -129,11 +135,13 @@
       "https://nix-community.cachix.org/"
       "https://hyprland.cachix.org/"
       "https://cache.nixos-cuda.org/"
+      "https://cache.flox.dev"
     ];
     trusted-public-keys = [
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
+      "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs="
     ];
   };
 
@@ -143,6 +151,47 @@
     "flakes"
   ];
 
+  # p2p sync
+  services.syncthing = {
+    enable = true;
+    user = "bileam";
+    configDir = "/home/bileam/.config/syncthing";
+    openDefaultPorts = true;
+    guiPasswordFile = config.sops.secrets.syncthing_pw.path;
+    dataDir = "/home/bileam/share";
+    settings = {
+      gui.user = "bileam";
+      devices = {
+        "Athenai" = {
+          id = "YGE4G62-MDK6IBE-AKSPY4V-E22RTI7-LMLT4EE-NMI7QAN-4RYIBET-LFO37AM";
+        };
+        "BooxA3" = {
+          id = "KZ4MOMI-WMH4T25-537ZFGZ-EJNQE5Q-4NNPCHS-7SAPHHI-XUTQOHZ-DS4H5AE";
+        };
+        "Theseus" = {
+          id = "BQJNJEN-3B2JNAN-HEA6FCG-M6GDSTI-7H4BL3E-77MTHAY-3VVNJUI-D5CLTQI";
+        };
+      };
+      folders = {
+        "dspls" = {
+          path = "/home/bileam/code/dpsls";
+          devices = [
+            "Athenai"
+            "Theseus"
+          ];
+        };
+        "share" = {
+          path = "/home/bileam/share/";
+          devices = [
+            "Athenai"
+            "BooxA3"
+            "Theseus"
+          ];
+        };
+      };
+
+    };
+  };
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

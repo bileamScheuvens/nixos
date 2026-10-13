@@ -39,7 +39,7 @@
     # obsidian
     presenterm
     starship
-    vim-hypr-nav
+    # vim-hypr-nav
     tuxedo
     libnotify
 
@@ -80,10 +80,12 @@
     vim
     inputs.nixvim.packages."${stdenv.hostPlatform.system}".default
     typst
+    tinymist
     pandoc
     # zotero
     mermaid-cli
-    texliveFull
+    # texliveFull
+    texliveBasic
     xdg-desktop-portal-termfilechooser
 
     # development

@@ -37,7 +37,6 @@
     # use blink
     cmp.enable = false;
 
-    blink-cmp-git.enable = true;
     blink-cmp = {
       enable = true;
       settings = {
@@ -47,15 +46,7 @@
             "snippets"
             "buffer"
             "path"
-            # auth broken, wait for new release
-            # "git"
           ];
-          providers = {
-            git = {
-              module = "blink-cmp-git";
-              name = "git";
-            };
-          };
         };
         completion = {
           list.selection.preselect = false;

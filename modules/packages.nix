@@ -36,7 +36,7 @@
     kitty
     libreoffice
     marp-cli
-    # obsidian
+    obsidian
     presenterm
     starship
     # vim-hypr-nav

@@ -33,6 +33,7 @@
       nixd.enable = true;
       jdtls.enable = true;
       lua_ls.enable = true;
+      julia_ls.enable = true;
       ruff.enable = true;
       rust.enable = true;
       ty.enable = true;
@@ -41,7 +42,7 @@
         config.settings = {
           formatterMode = "typstyle";
           projectResolution = "lockDatabase";
-          exportPdf = "never"; # avoid memory leak until patched
+          exportPdf = "onSave";
         };
       };
       texlab.enable = true;

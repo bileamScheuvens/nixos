@@ -173,6 +173,20 @@
         };
       };
       folders = {
+        "phd" = {
+          path = "/home/bileam/vaults/phd";
+          devices = [
+            "Athenai"
+            "Theseus"
+          ];
+        };
+        "store" = {
+          path = "/home/bileam/vaults/phd/store";
+          devices = [
+            "Athenai"
+            "BooxA3"
+          ];
+        };
         "dspls" = {
           path = "/home/bileam/code/dspls";
           devices = [

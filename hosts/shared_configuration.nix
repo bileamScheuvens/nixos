@@ -173,6 +173,13 @@
         };
       };
       folders = {
+        "exports" = {
+          path = "/home/bileam/code/pico_retrieval/exports/";
+          devices = [
+            "Athenai"
+            "Theseus"
+          ];
+        };
         "phd" = {
           path = "/home/bileam/vaults/phd";
           devices = [
@@ -189,6 +196,13 @@
         };
         "dspls" = {
           path = "/home/bileam/code/dspls";
+          devices = [
+            "Athenai"
+            "Theseus"
+          ];
+        };
+        "fonts" = {
+          path = "/home/bileam/fonts/";
           devices = [
             "Athenai"
             "Theseus"
